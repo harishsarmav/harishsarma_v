@@ -9,12 +9,9 @@
 {% if any-share-links %}
 <section id = "social-share-section">
   <span class="sr-only">Share: </span>
-  <span>URL: {{ page.url | absolute_url }}</span>
-  <span>Title: {{ page.title }}</span>
-
 
   {% if site.share-links-active.twitter %}
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | strip_html | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+    <a href="https://twitter.com/intent/tweet?text={{ page.url | strip_html | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-twitter" title="Share on X (Twitter)">
       <span class="fab fa-fw fa-x-twitter" aria-hidden="true"></span>
       <span class="sr-only">X (Twitter)</span>
@@ -55,7 +52,7 @@
 
   <!-- Add WhatsApp sharing -->
   {% if site.share-links-active.whatsapp %}
-    <a href="https://api.whatsapp.com/send?text={{ page.title | strip_html | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+    <a href="https://api.whatsapp.com/send?text={{ page.url | strip_html | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-whatsapp" title="Share on WhatsApp">
       <span class="fab fa-fw fa-whatsapp" aria-hidden="true"></span>
       <span class="sr-only">WhatsApp</span>

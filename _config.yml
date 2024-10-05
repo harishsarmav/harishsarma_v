@@ -145,7 +145,7 @@ timezone: "Asia/Kolkata"
 
 
 # Default permalink structure
-permalink: /:year-:month-:day-:title/
+permalink: /:title/
 
 
 kramdown:
@@ -160,7 +160,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "post"
+      type: "posts"
     values:
       layout: "default"
       comments: true

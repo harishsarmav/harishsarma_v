@@ -72,6 +72,8 @@
 .btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{color:#fff;background-color:#305777;border-color:rgba(0,0,0,0.2)}.btn-instagram:active:hover,.btn-instagram.active:hover,.open>.dropdown-toggle.btn-instagram:hover,.btn-instagram:active:focus,.btn-instagram.active:focus,.open>.dropdown-toggle.btn-instagram:focus,.btn-instagram:active.focus,.btn-instagram.active.focus,.open>.dropdown-toggle.btn-instagram.focus{color:#fff;background-color:#26455d;border-color:rgba(0,0,0,0.2)}
 .btn-instagram:active,.btn-instagram.active,.open>.dropdown-toggle.btn-instagram{background-image:none}
 .btn-instagram.disabled,.btn-instagram[disabled],fieldset[disabled] .btn-instagram,.btn-instagram.disabled:hover,.btn-instagram[disabled]:hover,fieldset[disabled] .btn-instagram:hover,.btn-instagram.disabled:focus,.btn-instagram[disabled]:focus,fieldset[disabled] .btn-instagram:focus,.btn-instagram.disabled.focus,.btn-instagram[disabled].focus,fieldset[disabled] .btn-instagram.focus,.btn-instagram.disabled:active,.btn-instagram[disabled]:active,fieldset[disabled] .btn-instagram:active,.btn-instagram.disabled.active,.btn-instagram[disabled].active,fieldset[disabled] .btn-instagram.active{background-color:#3f729b;border-color:rgba(0,0,0,0.2)}
+
+#linkedin
 .btn-instagram .badge{color:#3f729b;background-color:#fff}
 .btn-linkedin{color:#fff;background-color:#007bb6;border-color:rgba(0,0,0,0.2)}.btn-linkedin:focus,.btn-linkedin.focus{color:#fff;background-color:#005983;border-color:rgba(0,0,0,0.2)}
 .btn-linkedin:hover{color:#fff;background-color:#005983;border-color:rgba(0,0,0,0.2)}
@@ -79,6 +81,8 @@
 .btn-linkedin:active,.btn-linkedin.active,.open>.dropdown-toggle.btn-linkedin{background-image:none}
 .btn-linkedin.disabled,.btn-linkedin[disabled],fieldset[disabled] .btn-linkedin,.btn-linkedin.disabled:hover,.btn-linkedin[disabled]:hover,fieldset[disabled] .btn-linkedin:hover,.btn-linkedin.disabled:focus,.btn-linkedin[disabled]:focus,fieldset[disabled] .btn-linkedin:focus,.btn-linkedin.disabled.focus,.btn-linkedin[disabled].focus,fieldset[disabled] .btn-linkedin.focus,.btn-linkedin.disabled:active,.btn-linkedin[disabled]:active,fieldset[disabled] .btn-linkedin:active,.btn-linkedin.disabled.active,.btn-linkedin[disabled].active,fieldset[disabled] .btn-linkedin.active{background-color:#007bb6;border-color:rgba(0,0,0,0.2)}
 .btn-linkedin .badge{color:#007bb6;background-color:#fff}
+
+
 .btn-microsoft{color:#fff;background-color:#2672ec;border-color:rgba(0,0,0,0.2)}.btn-microsoft:focus,.btn-microsoft.focus{color:#fff;background-color:#125acd;border-color:rgba(0,0,0,0.2)}
 .btn-microsoft:hover{color:#fff;background-color:#125acd;border-color:rgba(0,0,0,0.2)}
 .btn-microsoft:active,.btn-microsoft.active,.open>.dropdown-toggle.btn-microsoft{color:#fff;background-color:#125acd;border-color:rgba(0,0,0,0.2)}.btn-microsoft:active:hover,.btn-microsoft.active:hover,.open>.dropdown-toggle.btn-microsoft:hover,.btn-microsoft:active:focus,.btn-microsoft.active:focus,.open>.dropdown-toggle.btn-microsoft:focus,.btn-microsoft:active.focus,.btn-microsoft.active.focus,.open>.dropdown-toggle.btn-microsoft.focus{color:#fff;background-color:#0f4bac;border-color:rgba(0,0,0,0.2)}
@@ -111,16 +115,26 @@
 .btn-reddit .badge{color:#eff7ff;background-color:#000} */
 
 #reddit
-.btn-reddit{color:#FF4500;background-color:#f4f4f4;border-color:rgba(0,0,0,0.2)}
-.btn-reddit:focus,.btn-reddit.focus{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
-.btn-reddit:hover{color:#FF4500;background-color:#FF5700;border-color:rgba(0,0,0,0.2)}
-.btn-reddit:active,.btn-reddit.active,.open>.dropdown-toggle.btn-reddit{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
+.btn-reddit .badge { color: #FF4500; background-color: #fff; }
+.btn-reddit { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit:focus, .btn-reddit.focus { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit:hover { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit:active, .btn-reddit.active, .open>.dropdown-toggle.btn-reddit { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit:active:hover, .btn-reddit.active:hover, .open>.dropdown-toggle.btn-reddit:hover, .btn-reddit:active:focus, .btn-reddit.active:focus, .open>.dropdown-toggle.btn-reddit:focus, .btn-reddit:active.focus, .btn-reddit.active.focus, .open>.dropdown-toggle.btn-reddit.focus { color: #fff; background-color: #E03D00; border-color: rgba(0,0,0,0.2); }
+.btn-reddit:active, .btn-reddit.active, .open>.dropdown-toggle.btn-reddit { background-image: none; }
+.btn-reddit.disabled, .btn-reddit[disabled], fieldset[disabled] .btn-reddit, .btn-reddit.disabled:hover, .btn-reddit[disabled]:hover, fieldset[disabled] .btn-reddit:hover, .btn-reddit.disabled:focus, .btn-reddit[disabled]:focus, fieldset[disabled] .btn-reddit:focus, .btn-reddit.disabled.focus, .btn-reddit[disabled].focus, fieldset[disabled] .btn-reddit.focus, .btn-reddit.disabled:active, .btn-reddit[disabled]:active, fieldset[disabled] .btn-reddit:active, .btn-reddit.disabled.active, .btn-reddit[disabled].active, fieldset[disabled] .btn-reddit.active { background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit .badge { color: #FF4500; background-color: #fff; }
 
 #Whatsapp
-.btn-whatsapp{color:#25D366;background-color:#f0f0f0;border-color:rgba(0,0,0,0.2)}
-.btn-whatsapp:focus,.btn-whatsapp.focus{color:#25D366;background-color:#ECE5DD;border-color:rgba(0,0,0,0.2)}
-.btn-whatsapp:hover{color:#25D366;background-color:#D4F6C4;border-color:rgba(0,0,0,0.2)}
-.btn-whatsapp:active,.btn-whatsapp.active,.open>.dropdown-toggle.btn-whatsapp{color:#25D366;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
+.btn-whatsapp .badge { color: #25D366; background-color: #fff; }
+.btn-whatsapp { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp:focus, .btn-whatsapp.focus { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp:hover { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp:active, .btn-whatsapp.active, .open>.dropdown-toggle.btn-whatsapp { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp:active:hover, .btn-whatsapp.active:hover, .open>.dropdown-toggle.btn-whatsapp:hover, .btn-whatsapp:active:focus, .btn-whatsapp.active:focus, .open>.dropdown-toggle.btn-whatsapp:focus, .btn-whatsapp:active.focus, .btn-whatsapp.active.focus, .open>.dropdown-toggle.btn-whatsapp.focus { color: #fff; background-color: #1DA851; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp:active, .btn-whatsapp.active, .open>.dropdown-toggle.btn-whatsapp { background-image: none; }
+.btn-whatsapp.disabled, .btn-whatsapp[disabled], fieldset[disabled] .btn-whatsapp, .btn-whatsapp.disabled:hover, .btn-whatsapp[disabled]:hover, fieldset[disabled] .btn-whatsapp:hover, .btn-whatsapp.disabled:focus, .btn-whatsapp[disabled]:focus, fieldset[disabled] .btn-whatsapp:focus, .btn-whatsapp.disabled.focus, .btn-whatsapp[disabled].focus, fieldset[disabled] .btn-whatsapp.focus, .btn-whatsapp.disabled:active, .btn-whatsapp[disabled]:active, fieldset[disabled] .btn-whatsapp:active, .btn-whatsapp.disabled.active, .btn-whatsapp[disabled].active, fieldset[disabled] .btn-whatsapp.active { background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp .badge { color: #25D366; background-color: #fff; }
 
 .btn-soundcloud{color:#fff;background-color:#f50;border-color:rgba(0,0,0,0.2)}.btn-soundcloud:focus,.btn-soundcloud.focus{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
 .btn-soundcloud:hover{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}

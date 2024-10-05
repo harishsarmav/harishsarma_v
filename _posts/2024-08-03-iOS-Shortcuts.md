@@ -4,7 +4,7 @@ title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
 cover-img: "assets/img/shortcut.jpg"
 date:   2024-08-03 12:40:00 IST
-tags: [ios shortcuts]
+tags: [ios shortcuts, Lifestyle,Technology]
 comments: true
 author: Harish sarma
 gh-repo: harishsarmav/HarishHub

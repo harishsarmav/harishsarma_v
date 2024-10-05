@@ -145,8 +145,11 @@ timezone: "Asia/Kolkata"
 
 
 # Default permalink structure
-permalink: /:title/
-paginate: 10
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+permalink: 
+paginate: 5
 paginate_path: "/page:num/"
 
 kramdown:

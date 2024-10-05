@@ -17,6 +17,11 @@ author: Harish Sarma V
 # base url 
 baseurl: "https://harishsarmav.github.io/"
 
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
+
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -145,6 +150,7 @@ timezone: "Asia/Kolkata"
 # Default permalink structure
 markdown: kramdown
 highlighter: rouge
+permalink: /:year-:month-:day-:title/
 paginate: 5
 paginate_path: "/blog/page:num/"
 
@@ -164,8 +170,6 @@ defaults:
     values:
       layout: "default"
       comments: true
-      social-share: true
-      show-share: false
 
   -
     scope:
@@ -186,5 +190,6 @@ exclude:
 
 # Jekyll plugins
 plugins:
+` - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap

@@ -6,7 +6,8 @@ cover-img: "assets/img/programmer.jpg"
 date: 2024-09-16 23:00:00 IST  
 tags: [programming, software development, languages]  
 comments: false  
-author: Harish Sarma  
+author: Harish Sarma
+gh-repo: harishsarmav/HarishHub
 readtime: true  
 ---
 

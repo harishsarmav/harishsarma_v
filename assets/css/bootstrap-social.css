@@ -113,15 +113,14 @@
 #reddit
 .btn-reddit{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
 .btn-reddit:focus,.btn-reddit.focus{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
-.btn-reddit:hover{color:#FF4500;background-color:#FF5700;border-color:rgba(0,0,0,0.2)}
+.btn-reddit:hover{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
 .btn-reddit:active,.btn-reddit.active,.open>.dropdown-toggle.btn-reddit{color:#FF4500;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
 
 #Whatsapp
 .btn-whatsapp{color:#25D366;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
-.btn-whatsapp:focus,.btn-whatsapp.focus{color:#25D366;background-color:#ECE5DD;border-color:rgba(0,0,0,0.2)}
-.btn-whatsapp:hover{color:#25D366;background-color:#D4F6C4;border-color:rgba(0,0,0,0.2)}
+.btn-whatsapp:focus,.btn-whatsapp.focus{color:#25D366;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
+.btn-whatsapp:hover{color:#25D366;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
 .btn-whatsapp:active,.btn-whatsapp.active,.open>.dropdown-toggle.btn-whatsapp{color:#25D366;background-color:#FFFFFF;border-color:rgba(0,0,0,0.2)}
-
 
 .btn-soundcloud{color:#fff;background-color:#f50;border-color:rgba(0,0,0,0.2)}.btn-soundcloud:focus,.btn-soundcloud.focus{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}
 .btn-soundcloud:hover{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}

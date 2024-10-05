@@ -7,6 +7,7 @@ date:   2024-08-03 12:40:00 IST
 tags: [ios shortcuts]
 comments: true
 author: Harish sarma
+gh-repo: harishsarmav/HarishHub
 readtime: true
 ---
 

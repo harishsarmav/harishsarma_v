@@ -7,6 +7,7 @@ date: 2024-10-05 18:00:00 +0530
 tags: [Minimalism, Technology, Lifestyle]
 comments: true
 author: Harish Sarma
+gh-repo: harishsarmav/HarishHub
 readtime: true
 ---
 

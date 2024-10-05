@@ -60,7 +60,6 @@ share-links-active:
   twitter: true
   facebook: false
   linkedin: true
-  reddit: true
   whatsapp: true
 
 # How to display the link to your website in the footer
@@ -166,9 +165,8 @@ defaults:
     values:
       layout: "default"
       comments: true
-      show-share: true
       social-share: true
-      tags: []
+      show-share: true
 
   -
     scope:

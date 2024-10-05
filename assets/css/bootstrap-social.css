@@ -116,24 +116,80 @@
 
 #reddit
 .btn-reddit .badge { color: #FF4500; background-color: #fff; }
-.btn-reddit { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
-.btn-reddit:focus, .btn-reddit.focus { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
-.btn-reddit:hover { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
-.btn-reddit:active, .btn-reddit.active, .open>.dropdown-toggle.btn-reddit { color: #fff; background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
-.btn-reddit:active:hover, .btn-reddit.active:hover, .open>.dropdown-toggle.btn-reddit:hover, .btn-reddit:active:focus, .btn-reddit.active:focus, .open>.dropdown-toggle.btn-reddit:focus, .btn-reddit:active.focus, .btn-reddit.active.focus, .open>.dropdown-toggle.btn-reddit.focus { color: #fff; background-color: #E03D00; border-color: rgba(0,0,0,0.2); }
-.btn-reddit:active, .btn-reddit.active, .open>.dropdown-toggle.btn-reddit { background-image: none; }
-.btn-reddit.disabled, .btn-reddit[disabled], fieldset[disabled] .btn-reddit, .btn-reddit.disabled:hover, .btn-reddit[disabled]:hover, fieldset[disabled] .btn-reddit:hover, .btn-reddit.disabled:focus, .btn-reddit[disabled]:focus, fieldset[disabled] .btn-reddit:focus, .btn-reddit.disabled.focus, .btn-reddit[disabled].focus, fieldset[disabled] .btn-reddit.focus, .btn-reddit.disabled:active, .btn-reddit[disabled]:active, fieldset[disabled] .btn-reddit:active, .btn-reddit.disabled.active, .btn-reddit[disabled].active, fieldset[disabled] .btn-reddit.active { background-color: #FF4500; border-color: rgba(0,0,0,0.2); }
+.btn-reddit {
+    color: #fff;
+    background-color: #FF4500;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-reddit:focus,
+.btn-reddit:hover,
+.btn-reddit:active,
+.btn-reddit.active,
+.open>.dropdown-toggle.btn-reddit {
+    color: #fff !important;
+    background-color: #FF4500 !important;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-reddit.disabled,
+.btn-reddit[disabled],
+fieldset[disabled] .btn-reddit,
+.btn-reddit.disabled:hover,
+.btn-reddit[disabled]:hover,
+fieldset[disabled] .btn-reddit:hover,
+.btn-reddit.disabled:focus,
+.btn-reddit[disabled]:focus,
+fieldset[disabled] .btn-reddit:focus,
+.btn-reddit.disabled.focus,
+.btn-reddit[disabled].focus,
+fieldset[disabled] .btn-reddit.focus,
+.btn-reddit.disabled:active,
+.btn-reddit[disabled]:active,
+fieldset[disabled] .btn-reddit:active,
+.btn-reddit.disabled.active,
+.btn-reddit[disabled].active,
+fieldset[disabled] .btn-reddit.active {
+    background-color: #FF4500;
+    border-color: rgba(0,0,0,0.2);
+}
 .btn-reddit .badge { color: #FF4500; background-color: #fff; }
 
 #Whatsapp
 .btn-whatsapp .badge { color: #25D366; background-color: #fff; }
-.btn-whatsapp { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
-.btn-whatsapp:focus, .btn-whatsapp.focus { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
-.btn-whatsapp:hover { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
-.btn-whatsapp:active, .btn-whatsapp.active, .open>.dropdown-toggle.btn-whatsapp { color: #fff; background-color: #25D366; border-color: rgba(0,0,0,0.2); }
-.btn-whatsapp:active:hover, .btn-whatsapp.active:hover, .open>.dropdown-toggle.btn-whatsapp:hover, .btn-whatsapp:active:focus, .btn-whatsapp.active:focus, .open>.dropdown-toggle.btn-whatsapp:focus, .btn-whatsapp:active.focus, .btn-whatsapp.active.focus, .open>.dropdown-toggle.btn-whatsapp.focus { color: #fff; background-color: #1DA851; border-color: rgba(0,0,0,0.2); }
-.btn-whatsapp:active, .btn-whatsapp.active, .open>.dropdown-toggle.btn-whatsapp { background-image: none; }
-.btn-whatsapp.disabled, .btn-whatsapp[disabled], fieldset[disabled] .btn-whatsapp, .btn-whatsapp.disabled:hover, .btn-whatsapp[disabled]:hover, fieldset[disabled] .btn-whatsapp:hover, .btn-whatsapp.disabled:focus, .btn-whatsapp[disabled]:focus, fieldset[disabled] .btn-whatsapp:focus, .btn-whatsapp.disabled.focus, .btn-whatsapp[disabled].focus, fieldset[disabled] .btn-whatsapp.focus, .btn-whatsapp.disabled:active, .btn-whatsapp[disabled]:active, fieldset[disabled] .btn-whatsapp:active, .btn-whatsapp.disabled.active, .btn-whatsapp[disabled].active, fieldset[disabled] .btn-whatsapp.active { background-color: #25D366; border-color: rgba(0,0,0,0.2); }
+.btn-whatsapp {
+    color: #fff;
+    background-color: #25D366;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-whatsapp:focus,
+.btn-whatsapp:hover,
+.btn-whatsapp:active,
+.btn-whatsapp.active,
+.open>.dropdown-toggle.btn-whatsapp {
+    color: #fff !important;
+    background-color: #25D366 !important;
+    border-color: rgba(0,0,0,0.2);
+}
+.btn-whatsapp.disabled,
+.btn-whatsapp[disabled],
+fieldset[disabled] .btn-whatsapp,
+.btn-whatsapp.disabled:hover,
+.btn-whatsapp[disabled]:hover,
+fieldset[disabled] .btn-whatsapp:hover,
+.btn-whatsapp.disabled:focus,
+.btn-whatsapp[disabled]:focus,
+fieldset[disabled] .btn-whatsapp:focus,
+.btn-whatsapp.disabled.focus,
+.btn-whatsapp[disabled].focus,
+fieldset[disabled] .btn-whatsapp.focus,
+.btn-whatsapp.disabled:active,
+.btn-whatsapp[disabled]:active,
+fieldset[disabled] .btn-whatsapp:active,
+.btn-whatsapp.disabled.active,
+.btn-whatsapp[disabled].active,
+fieldset[disabled] .btn-whatsapp.active {
+    background-color: #25D366;
+    border-color: rgba(0,0,0,0.2);
+}
 .btn-whatsapp .badge { color: #25D366; background-color: #fff; }
 
 .btn-soundcloud{color:#fff;background-color:#f50;border-color:rgba(0,0,0,0.2)}.btn-soundcloud:focus,.btn-soundcloud.focus{color:#fff;background-color:#c40;border-color:rgba(0,0,0,0.2)}

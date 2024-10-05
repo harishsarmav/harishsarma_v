@@ -72,7 +72,7 @@ title-on-all-pages: true
 # Excerpt settings
 excerpt_length: 50
 feed_show_excerpt: false
-feed_show_tags: true
+feed_show_tags: false
 
 # Add a search button to the navbar
 post_search: true

@@ -72,7 +72,7 @@ title-on-all-pages: true
 # Excerpt settings
 excerpt_length: 50
 feed_show_excerpt: false
-feed_show_tags: false
+feed_show_tags: true
 
 # Add a search button to the navbar
 post_search: true
@@ -165,7 +165,6 @@ defaults:
       type: "posts"
     values:
       layout: "default"
-      show-share: true
       comments: true
       social-share: true
 
@@ -174,7 +173,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-      show-share: true
 
 # Excluded files from production site
 exclude:

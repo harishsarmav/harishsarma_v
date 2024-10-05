@@ -186,6 +186,5 @@ exclude:
 
 # Jekyll plugins
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap

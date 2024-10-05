@@ -162,12 +162,11 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "post"
     values:
       layout: "default"
       comments: true
       social-share: true
-      after-content: [share-section.html]
 
   -
     scope:

@@ -146,7 +146,8 @@ timezone: "Asia/Kolkata"
 
 # Default permalink structure
 permalink: /:title/
-
+paginate: 10
+paginate_path: "/page:num/"
 
 kramdown:
   input: GFM
@@ -171,7 +172,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-      social-share: true
 
 # Excluded files from production site
 exclude:

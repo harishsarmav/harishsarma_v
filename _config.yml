@@ -17,11 +17,6 @@ author: Harish Sarma V
 # base url 
 baseurl: "https://harishsarmav.github.io/"
 
-# homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 6
-
-
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################

@@ -1,13 +1,5 @@
-<!-- Check if any share-links are active -->
-{% assign any-share-links = false %}
-{% for links in site.share-links-active %}
-  {% if links[1] == true %}
-    {% assign any-share-links = true %}
-  {% endif %}
-{% endfor %}
-
 {% if any-share-links %}
-<section id = "social-share-section">
+<section id="social-share-section">
   <span class="sr-only">Share: </span>
 
   {% if site.share-links-active.twitter %}
@@ -43,14 +35,13 @@
   {% endif %}
 
   <!-- Add WhatsApp sharing -->
-{% if site.share-links-active.whatsapp %}
-<a href="https://api.whatsapp.com/send?text={{ page.title | strip_html | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
-  class="btn btn-social-icon btn-whatsapp" title="Share on WhatsApp">
-  <span class="fab fa-fw fa-whatsapp" aria-hidden="true"></span>
-  <span class="sr-only">WhatsApp</span>
-</a>
-{% endif %}
+  {% if site.share-links-active.whatsapp %}
+    <a href="https://api.whatsapp.com/send?text={{ page.title | strip_html | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-whatsapp" title="Share on WhatsApp">
+      <span class="fab fa-fw fa-whatsapp" aria-hidden="true"></span>
+      <span class="sr-only">WhatsApp</span>
+    </a>
+  {% endif %}
 
 </section>
-
 {% endif %}

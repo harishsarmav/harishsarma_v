@@ -142,15 +142,10 @@ date_format: "%B %-d, %Y"
 # Timezone setting
 timezone: "Asia/Kolkata"
 
-
-
 # Default permalink structure
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-permalink: 
-paginate: 5
-paginate_path: "/page:num/"
 
 kramdown:
   input: GFM
@@ -169,6 +164,7 @@ defaults:
       layout: "default"
       comments: true
       social-share: true
+      show-share: false
 
   -
     scope:

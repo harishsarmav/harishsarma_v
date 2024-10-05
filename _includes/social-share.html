@@ -1,3 +1,11 @@
+<!-- Check if any share-links are active -->
+{% assign any-share-links = false %}
+{% for links in site.share-links-active %}
+  {% if links[1] == true %}
+    {% assign any-share-links = true %}
+  {% endif %}
+{% endfor %}
+
 {% if any-share-links %}
 <section id="social-share-section">
   <span class="sr-only">Share: </span>

@@ -146,7 +146,6 @@ timezone: "Asia/Kolkata"
 
 # Default permalink structure
 permalink: /:year-:month-:day-:title/
-paginate: 5
 
 
 kramdown:

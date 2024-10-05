@@ -9,6 +9,9 @@
 {% if any-share-links %}
 <section id = "social-share-section">
   <span class="sr-only">Share: </span>
+  <span>URL: {{ page.url | absolute_url }}</span>
+  <span>Title: {{ page.title }}</span>
+
 
   {% if site.share-links-active.twitter %}
     <a href="https://twitter.com/intent/tweet?text={{ page.title | strip_html | url_encode }}&url={{ page.url | absolute_url | url_encode }}"

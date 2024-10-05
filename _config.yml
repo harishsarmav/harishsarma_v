@@ -166,7 +166,9 @@ defaults:
     values:
       layout: "default"
       comments: true
+      show-share: true
       social-share: true
+      tags: []
 
   -
     scope:

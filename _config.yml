@@ -9,10 +9,10 @@
 ############################
 
 # Name of website
-title: harishsarma_v
+title: Harish Sarma
 
 # Your name to show in the footer
-author: Harish Sarma V
+author: Harish Sarma
 
 # base url 
 baseurl: "https://harishsarmav.github.io/"
@@ -48,7 +48,7 @@ social-network-links:
   github: harishsarmav
   twitter: harishsarma_v
   reddit: Relevant-Plantain615
-  linkedin: harish sarma velavalapalli
+  linkedin: "harishsarmavelavalapalli"
   instagram: i_am_harishsarma
 
 ###########################

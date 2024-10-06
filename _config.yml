@@ -33,7 +33,7 @@ future: true
 ################
 
 # Avatar image for the navigation bar
-avatar: "assets/img/sblack.jpg"
+avatar: "assets/img/LeMeridian_HS.jpg""
 round-avatar: true
 
 #####################################
@@ -61,7 +61,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "harishsarmav.github.io"
+#url-pretty: "harishsarmav.github.io"
 # Add the website title to the title of every page
 title-on-all-pages: true
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words

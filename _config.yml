@@ -33,7 +33,7 @@ future: true
 ################
 
 # Avatar image for the navigation bar
-avatar: "assets/img/sblack.jpeg"
+avatar: "assets/img/sblack.jpg"
 round-avatar: true
 
 #####################################

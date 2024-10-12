@@ -20,9 +20,9 @@ subtitle: Explore My Personal Projects
    - **Technology**: Jekyll, HTML/CSS, JavaScript
    - **Overview**: A simple and responsive personal website designed to share my blog, projects, and tutorials. The website uses Jekyll for blog management, with a focus on showcasing technology tutorials and thoughts on AI, C++, and Python.
    - **Status**: Live
-   - **Repo 🗂️**: [Personal Website](https://github.com/harishsarmav/HarishHub) / [Preview 👉](https://harishsarmav.github.io/HarishHub/) 🚀
+   - **Repo**: [🗂️Personal Website](https://github.com/harishsarmav/HarishHub) / [👉Click here](https://harishsarmav.github.io/HarishHub/) 🚀
 
-   - **Repo 🗂️**: [Simple Website](https://github.com/harishsarmav/hsv) / [Preview 👉](https://harishsarmav.github.io/hsv/) 🚀
+   - **Repo**: [🗂️Simple Website](https://github.com/harishsarmav/hsv) / [👉Click here](https://harishsarmav.github.io/hsv/) 🚀
 
 ---
 

@@ -14,7 +14,7 @@ layout: page
 
 <script>
   const phrases = [
-    "Welcome to Harish Sarma's Website",
+    "Welcome to My Website",
     "C++ Developer",
     "AI Enthusiast",
     "Vizagite",
@@ -61,7 +61,7 @@ layout: page
       }
     }
 
-    const speed = isEnd ? 2000 : isDeleting ? 100 : 150;
+    const speed = isEnd ? 1000 : isDeleting ? 50 : 75;  // Adjust speed here
     setTimeout(loop, speed);
   }
 
@@ -69,12 +69,30 @@ layout: page
 </script>
 
 <style>
-.typing-container {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  font-family: 'Courier New', Courier, monospace;
-}
+  .typing-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap; /* Keeps the text on one line */
+    overflow: hidden; /* Hides the overflowing text */
+    border-right: 3px solid black; /* Simulates the cursor */
+    width: 100%; /* You can adjust the width based on your layout */
+    max-width: 400px; /* This controls how much space the text takes */
+    padding: 0 5px; /* Add a little padding for smooth look */
+  }
+
+  /* Typewriter animation for the cursor */
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+  }
+
+  #dynamic-text {
+    display: inline-block;
+    border-right: 3px solid black; /* Typewriter cursor */
+    animation: blink 0.7s steps(1) infinite; /* Blinking effect for the cursor */
+  }
 </style>
 
 <!-- Old content is from here-->

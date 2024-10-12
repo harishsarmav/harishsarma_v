@@ -19,7 +19,7 @@ author: Harish Sarma
 ###############################################
 
 navbar-links:
-  Home: "/"
+  Blog: "/"
   About Me / Contact: "aboutme"
   Projects: "projects"
   Resources:

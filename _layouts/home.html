@@ -7,93 +7,98 @@ layout: page
 {% assign posts = paginator.posts | default: site.posts %}
 
 <!--New content starts here-->
-
-<div class="typing-container">
-  <span id="dynamic-text"></span>
-</div>
-
-<script>
-  const phrases = [
-    "Welcome to My Website",
-    "C++ Developer",
-    "AI Enthusiast",
-    "Vizagite",
-    "Marvel Fan",
-    "Tech Learner",
-    "iOS Automation Lover"
-  ];
-
-  let i = 0;
-  let j = 0;
-  let currentPhrase = [];
-  let isDeleting = false;
-  let isEnd = false;
-
-  function loop() {
-    isEnd = false;
-    document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
-
-    if (i < phrases.length) {
-      if (!isDeleting && j <= phrases[i].length) {
-        currentPhrase.push(phrases[i][j]);
-        j++;
-        document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
-      }
-
-      if (isDeleting && j <= phrases[i].length) {
-        currentPhrase.pop(phrases[i][j]);
-        j--;
-        document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
-      }
-
-      if (j == phrases[i].length) {
-        isEnd = true;
-        isDeleting = true;
-      }
-
-      if (isDeleting && j === 0) {
-        currentPhrase = [];
-        isDeleting = false;
-        i++;
-        if (i === phrases.length) {
-          i = 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Text with Cursor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
-      }
-    }
 
-    const speed = isEnd ? 1000 : isDeleting ? 50 : 75;  // Adjust speed here
-    setTimeout(loop, speed);
-  }
+        .typing-container {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            max-width: 600px; /* Adjust this width as needed */
+            padding: 0 5px;
+        }
 
-  loop();
-</script>
+        /* Cursor styling */
+        .cursor {
+            display: inline-block;
+            animation: blink 0.7s steps(1) infinite; /* Blinking effect for the cursor */
+        }
 
-<style>
-  .typing-container {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    white-space: nowrap; /* Keeps the text on one line */
-    overflow: hidden; /* Hides the overflowing text */
-    border-right: 3px solid black; /* Simulates the cursor */
-    width: 100%; /* You can adjust the width based on your layout */
-    max-width: 400px; /* This controls how much space the text takes */
-    padding: 0 5px; /* Add a little padding for smooth look */
-  }
+        /* Typewriter animation for the cursor */
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="typing-container">
+        <span id="dynamic-text"></span>
+        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!-- Cursor icon -->
+    </div>
 
-  /* Typewriter animation for the cursor */
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: black; }
-  }
+    <script>
+        const phrases = [
+            "Welcome to My Website",
+            "C++ Developer",
+            "AI Enthusiast",
+            "Vizagite",
+            "Lifelong Learner",
+            "Tech Explorer",
+            "Creative Mind",
+            "Passionate Programmer"
+        ];
 
-  #dynamic-text {
-    display: inline-block;
-    border-right: 3px solid black; /* Typewriter cursor */
-    animation: blink 0.7s steps(1) infinite; /* Blinking effect for the cursor */
-  }
-</style>
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let typingSpeed = 100; // Speed of typing (milliseconds)
+        let erasingSpeed = 50; // Speed of erasing (milliseconds)
+        let pauseBetweenPhrases = 1500; // Pause between phrases (milliseconds)
+
+        function type() {
+            if (currentCharIndex < phrases[currentPhraseIndex].length) {
+                document.getElementById("dynamic-text").innerHTML += phrases[currentPhraseIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, pauseBetweenPhrases);
+            }
+        }
+
+        function erase() {
+            if (currentCharIndex > 0) {
+                document.getElementById("dynamic-text").innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length; // Loop back to the first phrase
+                setTimeout(type, typingSpeed + 500); // Small delay before typing the next phrase
+            }
+        }
+
+        // Start the typing effect
+        type();
+    </script>
+</body>
+</html>
 
 <!-- Old content is from here-->
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->

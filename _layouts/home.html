@@ -6,90 +6,77 @@ layout: page
 
 {% assign posts = paginator.posts | default: site.posts %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harish Sarma's Website</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-  <style>
-    /* Typewriter effect */
-    .typewriter {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 2rem;
-      color: #333;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 0.15em solid black;
-      width: 0;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    }
+<!--New content starts here-->
 
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
+<div class="typing-container">
+  <span id="dynamic-text"></span>
+</div>
 
-    @keyframes blink-caret {
-      from, to { border-color: transparent; }
-      50% { border-color: black; }
-    }
+<script>
+  const phrases = [
+    "Welcome to Harish Sarma's Website",
+    "C++ Developer",
+    "AI Enthusiast",
+    "Vizagite",
+    "Marvel Fan",
+    "Tech Learner",
+    "iOS Automation Lover"
+  ];
 
-    .spotify-player-wrapper {
-      position: absolute;
-      right: 0;
-      top: 150px;
-      margin-right: 20px;
-    }
-  </style>
-</head>
-<body>
+  let i = 0;
+  let j = 0;
+  let currentPhrase = [];
+  let isDeleting = false;
+  let isEnd = false;
 
-  <header>
-    <h1 id="dynamic-text" class="typewriter"></h1>
-  </header>
+  function loop() {
+    isEnd = false;
+    document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
 
-  <main>
-    <p>This is where I share my projects, thoughts, and more!</p>
-
-    <!-- Spotify Player -->
-    <div class="spotify-player-wrapper">
-      <iframe style="border-radius:12px" 
-        src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" 
-        width="300" 
-        height="380" 
-        frameborder="0" 
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </main>
-
-  <footer>
-    <!-- Footer content -->
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var text = "Welcome to Harish Sarma's Website";
-      var i = 0;
-      var speed = 100;
-
-      function typeWriter() {
-        if (i < text.length) {
-          document.getElementById("dynamic-text").innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
+    if (i < phrases.length) {
+      if (!isDeleting && j <= phrases[i].length) {
+        currentPhrase.push(phrases[i][j]);
+        j++;
+        document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
       }
 
-      typeWriter();
-    });
-  </script>
+      if (isDeleting && j <= phrases[i].length) {
+        currentPhrase.pop(phrases[i][j]);
+        j--;
+        document.getElementById('dynamic-text').innerHTML = currentPhrase.join('');
+      }
 
-</body>
-</html>
+      if (j == phrases[i].length) {
+        isEnd = true;
+        isDeleting = true;
+      }
+
+      if (isDeleting && j === 0) {
+        currentPhrase = [];
+        isDeleting = false;
+        i++;
+        if (i === phrases.length) {
+          i = 0;
+        }
+      }
+    }
+
+    const speed = isEnd ? 2000 : isDeleting ? 100 : 150;
+    setTimeout(loop, speed);
+  }
+
+  loop();
+</script>
+
+<style>
+.typing-container {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+}
+</style>
+
 <!-- Old content is from here-->
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">

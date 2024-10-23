@@ -31,14 +31,14 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ## 🚀 Key Projects
 
-- 1. **AI Code Reviewer**
+1. **AI Code Reviewer**
    **_An AI-powered GitHub tool for automated code reviews_**  
    - **Technology**: Python, OpenAI API, GitHub API  
    - **Overview**: This AI-driven tool reviews GitHub pull requests automatically, providing feedback and improvement suggestions to boost code quality. It integrates with GitHub, triggering whenever a pull request is submitted, and comments with relevant feedback.  
    - **Status**: Deployed and under testing.  
    - **GitHub Repo**: [AI Code Reviewer](https://github.com/harishsarmav/AI_Code_Review)
 
-- 2. **Personal Website**
+2. **Personal Website**
    **_A personal portfolio website built using Jekyll and GitHub Pages_**  
    - **Technology**: Jekyll, HTML/CSS, JavaScript  
    - **Overview**: A minimalist yet functional personal website that hosts my blog, project updates, and tutorials. The site uses Jekyll for content management and focuses on sharing thoughts on AI, C++, and Python.  
@@ -62,13 +62,14 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 <b>🎯 My Learning Journey</b><br><br>
 
 <ul style="height: 300px; overflow: auto">
-<li><i>**Swimming**: Recently took up swimming as part of my fitness routine on 17th oct 2024.  
-  _It's been 7 days, and I'm already hooked!_ </li><br>
-<li><br>**AI & Python**: Dedicating time to improving my AI and Python programming skills. 
-  _Learning is a lifelong adventure!_ </li><br>
+    <li><i>Swimming: Recently took up swimming as part of my fitness routine on 17th oct 2024. 
+          _It's been 7 days, and I'm already hooked!_ </li><br>
+    <li><br>AI & Python: Dedicating time to improving my AI and Python programming skills. 
+          _Learning is a lifelong adventure!_ </li><br>
 </ul>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 ---
 
 ## 🌍 Let’s Connect!

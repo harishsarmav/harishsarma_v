@@ -30,7 +30,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ## 🚀 Key Projects
-- 💻 Check out my latest projects and innovations on the [Projects](/projects) page 🚀.
+- Check out my latest projects and innovations on the [Projects Page]({{ site.baseurl }}/projects.md).
 
 ---
 
@@ -44,7 +44,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ## 🎯 My Learning Journey
 
-- **Swimming**: Recently took up swimming as part of my fitness routine.  
+- **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct 2024.  
   _It's been 7 days, and I'm already hooked!_
 - **AI & Python**: Dedicating time to improving my AI and Python programming skills. 
   _Learning is a lifelong adventure!_

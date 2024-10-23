@@ -11,8 +11,7 @@ subtitle: Explore My Personal Projects
    - **Technology**: Python, OpenAI API, GitHub API  
    - **Overview**: This AI-driven tool reviews GitHub pull requests automatically, providing feedback and improvement suggestions to boost code quality. It integrates with GitHub, triggering whenever a pull request is submitted, and comments with relevant feedback.  
    - **Status**: Deployed and under testing.  
-   - **GitHub Repo**: [AI Code Reviewer](https://github.com/harishsarmav/AI_Code_Review)  
-     🌐 [**Click here to preview**](https://github.com/harishsarmav/AI_Code_Review)
+   - **GitHub Repo**: [AI Code Reviewer](https://github.com/harishsarmav/AI_Code_Review)
 
 ---
 

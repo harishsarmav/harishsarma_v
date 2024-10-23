@@ -16,6 +16,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 - 🎬 **Marvel Fan**: Big fan of superhero stories, especially from the Marvel universe.
 - 🏖️ **Vizagite**: Proud to hail from the beautiful coastal city of Visakhapatnam (Vizag), India.
 - 🏊 **Swimming Rookie**: I recently started learning swimming, and it's been an exciting journey so far!
+
 ---
 
 ## 💼 Professional Snapshot

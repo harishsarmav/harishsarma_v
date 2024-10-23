@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+permalink: /projects/
 subtitle: Explore My Personal Projects
 ---
 

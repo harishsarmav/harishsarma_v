@@ -31,10 +31,8 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ### 🚀 Personal Projects
 
-<p class="about-text">
-Check out my latest projects on the <a href="/projects">Projects Page</a> 🚀.
-</p>
-
+- Check out my latest projects on the [Projects page](/projects.md) 🚀.
+- [About me](/aboutme.md)
 
 ---
 

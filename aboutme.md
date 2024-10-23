@@ -31,8 +31,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ### 🚀 Personal Projects
 
-- Check out my latest projects on the [Projects page](./projects) 🚀.
-- [test purpose](_posts/2024-08-03-iOS-Shortcuts.md) 
+- Check out my latest projects on the [Projects page](/projects.md) 🚀.
 
 ---
 

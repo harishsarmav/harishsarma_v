@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+share-title: Harish Sarma | Projects
 permalink: /projects/
 subtitle: Explore My Personal Projects
 ---

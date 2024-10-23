@@ -2,6 +2,7 @@
 layout: page
 title: About me
 subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate software engineer based in India.
+share-title: Harish Sarma | About me
 ---
 <!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
 

@@ -31,7 +31,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ### 🚀 Personal Projects
 
-- Check out my latest projects on the [Projects page](https://harishsarmav.github.io/HarishHub/projects/) 🚀.
+<p>💻 Check out my latest projects on the <a href="/projects">Projects Page</a> 🚀.</p>
 
 ---
 
@@ -43,7 +43,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ### 🎯 My Learning Journey
-- **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct 2024.  
+- **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct'24.  
   _It's been 7 days, and I'm already hooked!_
 - **AI & Python**: Dedicating time to improving my AI and Python programming skills. 
   _Learning is a lifelong adventure!_

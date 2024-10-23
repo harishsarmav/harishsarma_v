@@ -30,17 +30,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ## 🚀 Key Projects
-
-### AI Code Reviewer
-- **Description**: An AI-powered tool that reviews code and provides suggestions directly in GitHub pull requests.
-- **Tech Stack**: Python, OpenAI API, GitHub Integrations
-- **Link**: [View on GitHub](https://github.com/harishsarmav)
-
-### Personal Website (Ongoing)
-- **Description**: A space where I document my journey, share blog posts, and showcase my work.
-- **Tech Stack**: Jekyll, HTML, CSS
-- **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/HarishHub)  
-  🌐 [**Click here to preview**](https://harishsarmav.github.io/HarishHub/)
+- 💻 Check out my latest projects and innovations on the [Projects Page](./projects.md) 🚀.
 
 ---
 

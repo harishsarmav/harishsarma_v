@@ -62,10 +62,16 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 <b>🎯 My Learning Journey</b><br><br>
 
 <ul style="height: 300px; overflow: auto">
-    <li><i>Swimming: Recently took up swimming as part of my fitness routine on 17th oct 2024. 
-          _It's been 7 days, and I'm already hooked!_ </li><br>
-    <li><br>AI & Python: Dedicating time to improving my AI and Python programming skills. 
-          _Learning is a lifelong adventure!_ </li><br>
+    <li><i>🏊‍♂️Swimming: Recently took up swimming as part of my fitness routine on 17th oct 2024. 
+          _It's been 7 days, and I'm already hooked!_ 
+          
+</li><br>
+
+    <li><i>👨‍💻AI & Python: Dedicating time to improving my AI and Python programming skills. 
+          _Learning is a lifelong adventure!_ 
+    
+</li><br>
+
 </ul>
 
 <hr style="height:2px;border-width:0;color:gray;background-color:gray">

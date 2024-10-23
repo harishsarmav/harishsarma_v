@@ -20,8 +20,8 @@ author: Harish Sarma
 
 navbar-links:
   Blog: "/"
-  About Me / Contact: "aboutme"
-  Social Links:
+  About Me: "aboutme"
+  Contact:
     - Instagram: "https://instagram.com/i_am_harishsarma"
     - X: "https://x.com/harishsarma_v"
     - Reddit: "https://www.reddit.com/user/Relevant-Plantain615/"

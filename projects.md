@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
 subtitle: Explore My Personal Projects
 ---
+
+Welcome to my projects page! Here, I showcase some of the personal projects I’ve been working on, ranging from **AI-powered tools** to **web development**. Each project represents a step forward in my journey as a developer, where I’m constantly learning, experimenting, and challenging myself to push boundaries in technology. 
+
+Feel free to explore the repos, try out the demos, and even contribute if you find something interesting. Let’s build something amazing together!
 
 ## 💻 Featured Projects
 

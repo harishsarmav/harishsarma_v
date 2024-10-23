@@ -21,7 +21,11 @@ author: Harish Sarma
 navbar-links:
   Blog: "/"
   About Me / Contact: "aboutme"
-  #Projects: "projects"
+  Social Links:
+    - Instagram: "https://instagram.com/i_am_harishsarma"
+    - X: "https://x.com/harishsarma_v"
+    - Reddit: "https://www.reddit.com/user/Relevant-Plantain615/"
+    - Linkedin: "https://www.linkedin.com/in/harishsarmav/"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn Markdown: "https://www.markdowntutorial.com/"

@@ -19,9 +19,9 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ---
 
-## 💼 Professional Snapshot
+### 💼 Professional Snapshot
 
-- **Current Role**: Software Engineer
+- **Current Role**: Software Engineer at [Thomson Reuters](https://www.thomsonreuters.com/en.html)
 - **Specialties**: 
   - C++
   - Python _(currently learning)_
@@ -29,20 +29,20 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ---
 
-## 🚀 Key Projects
+### 🚀 Personal Projects
 
-- Check out my latest projects and innovations on the [Projects page](./projects.md) 🚀.
+- Check out my latest projects and innovations on the [Projects page](./projects) 🚀.
 
 ---
 
-## 💻 My Tech Interests
+### 💻 My Tech Interests
 
 - **iOS Automations & Shortcuts**: I enjoy building tools that streamline daily tasks using automation.
 - **AI & Machine Learning**: I’m fascinated by the ways AI can shape software development.
 
 ---
 
-## 🎯 My Learning Journey
+### 🎯 My Learning Journey
 - **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct 2024.  
   _It's been 7 days, and I'm already hooked!_
 - **AI & Python**: Dedicating time to improving my AI and Python programming skills. 

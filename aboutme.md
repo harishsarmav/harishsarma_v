@@ -30,12 +30,6 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ---
 
-### 🚀 Personal Projects
-
-- Check out my latest projects on the [Projects page](/projects) 🚀.
-
----
-
 ### 💻 My Tech Interests
 
 - **iOS Automations & Shortcuts**: I enjoy building tools that streamline daily tasks using automation.

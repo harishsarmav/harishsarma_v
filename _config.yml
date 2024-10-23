@@ -14,6 +14,10 @@ title: harishsarma_v
 # Your name to show in the footer
 author: Harish Sarma
 
+baseurl: "/HarishHub"
+url: "https://harishsarmav.github.io"
+
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################

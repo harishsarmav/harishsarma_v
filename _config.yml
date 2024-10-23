@@ -21,7 +21,7 @@ author: Harish Sarma
 navbar-links:
   Blog: "/"
   About Me / Contact: "aboutme"
-  Projects: "projects"
+  #Projects: "projects"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn Markdown: "https://www.markdowntutorial.com/"

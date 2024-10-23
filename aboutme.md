@@ -30,7 +30,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ## 🚀 Key Projects
-- Check out my latest projects and innovations on the [Projects Page]({{ site.baseurl }}/projects.md).
+- Check out my latest projects and innovations on the [Projects Page](./projects.md)🚀.
 
 ---
 

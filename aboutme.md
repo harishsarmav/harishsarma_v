@@ -38,10 +38,21 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ### 🎯 My Learning Journey
-- **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct'24.  
-  _It's been 7 days, and I'm already hooked!_
-- **AI & Python**: Dedicating time to improving my AI and Python programming skills. 
-  _Learning is a lifelong adventure!_
+- **🏊‍♂️ Swimming**: Recently took up swimming as part of my fitness routine on 17th Oct 2024. It’s been <span id="swimming-days"></span> days, and I’m already hooked!
+- **🤖 AI & Python**: Dedicating time to improving my AI and Python programming skills. Learning is a lifelong adventure!
+
+<script>
+  function calculateDaysSince(dateString, elementId) {
+    const startDate = new Date(dateString);
+    const today = new Date();
+    const timeDiff = today - startDate;
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    document.getElementById(elementId).textContent = daysDiff;
+  }
+
+  // Calculate days since the given start dates
+  calculateDaysSince("2024-10-17", "swimming-days");
+</script>
 
 ---
 

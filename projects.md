@@ -6,7 +6,7 @@ permalink: /projects/
 subtitle: Explore My Personal Projects
 ---
 
-Welcome to my projects page! Here, I showcase some of the personal projects I’ve been working on, ranging from **AI-powered tools** to **web development**. Each project represents a step forward in my journey as a developer, where I’m constantly learning, experimenting, and challenging myself to push boundaries in technology. 
+Welcome to my projects page! Here, I showcase some of the personal projects I’ve been working on, Each project represents a step forward in my journey as a developer, where I’m constantly learning, experimenting, and challenging myself to push boundaries in technology. 
 
 Feel free to explore the repos, try out the demos, and even contribute if you find something interesting. Let’s build something amazing together!
 
@@ -24,12 +24,10 @@ Feel free to explore the repos, try out the demos, and even contribute if you fi
 ### 2. **Personal Website**
    **_A personal portfolio website built using Jekyll and GitHub Pages_**  
    - **Technology**: Jekyll, HTML/CSS, JavaScript  
-   - **Overview**: A minimalist yet functional personal website that hosts my blog, project updates, and tutorials. The site uses Jekyll for content management and focuses on sharing thoughts on AI, C++, and Python.  
+   - **Overview**: A minimalist yet functional personal website that hosts my blog, project updates, and tutorials. The site uses Jekyll for content management and focuses on sharing thoughts on tech related stuff.  
    - **Status**: Live  
-   - **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/HarishHub)  
-     🌐 [**Click here to preview**](https://harishsarmav.github.io/HarishHub/) 🚀  
-   - **GitHub Repo**: [Simple Website](https://github.com/harishsarmav/hsv)  
-     🌐 [**Click here to preview**](https://harishsarmav.github.io/hsv/) 🚀
+   - **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/HarishHub) | 🌐 [**Click here to preview**](https://harishsarmav.github.io/HarishHub/) 🚀  
+   - **GitHub Repo**: [Simple Website](https://github.com/harishsarmav/hsv) | 🌐 [**Click here to preview**](https://harishsarmav.github.io/hsv/) 🚀
 
 ---
 

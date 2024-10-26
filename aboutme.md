@@ -6,7 +6,7 @@ share-title: Harish Sarma | About me
 ---
 <!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
 
-## 👋 Hello, I’m Harish Sarma
+## 👋 Hey there!
 
 I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
 
@@ -38,8 +38,9 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ### 🎯 My Learning Journey
-- **🏊‍♂️ Swimming**: Recently took up swimming as part of my fitness routine on 17th Oct 2024. It’s been <span id="swimming-days"></span> days, and I’m already hooked!
-- **🤖 AI & Python**: Dedicating time to improving my AI and Python programming skills. Learning is a lifelong adventure!
+- **🏊‍♂️ Swimming**: Recently took up swimming as part of my fitness routine on 17th Oct 2024. 
+_It’s been <span id="swimming-days"></span> days, and I’m already hooked!_
+- **🤖 AI & Python**: Dedicating time to improving my AI and Python programming skills.
 
 <script>
   function calculateDaysSince(dateString, elementId) {

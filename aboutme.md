@@ -6,7 +6,7 @@ share-title: Harish Sarma | About me
 ---
 <!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
 
-## 👋 Hello, I’m Harish Sarma
+## 👋 Hey there!
 
 I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
 
@@ -38,10 +38,22 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ### 🎯 My Learning Journey
-- **Swimming**: Recently took up swimming as part of my fitness routine on 17th oct'24.  
-  _It's been 7 days, and I'm already hooked!_
-- **AI & Python**: Dedicating time to improving my AI and Python programming skills. 
-  _Learning is a lifelong adventure!_
+- **🏊‍♂️ Swimming**: Recently took up swimming as part of my fitness routine on 17th Oct 2024. 
+_It’s been <span id="swimming-days"></span> days, and I’m already hooked!_
+- **🤖 AI & Python**: Dedicating time to improving my AI and Python programming skills.
+
+<script>
+  function calculateDaysSince(dateString, elementId) {
+    const startDate = new Date(dateString);
+    const today = new Date();
+    const timeDiff = today - startDate;
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    document.getElementById(elementId).textContent = daysDiff;
+  }
+
+  // Calculate days since the given start dates
+  calculateDaysSince("2024-10-17", "swimming-days");
+</script>
 
 ---
 

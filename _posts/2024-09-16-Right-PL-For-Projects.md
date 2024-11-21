@@ -5,7 +5,7 @@ subtitle: A Guide to Picking the Best Language for Your Development Needs
 cover-img: "assets/img/programmer.jpg"  
 date: 2024-09-16 23:00:00 IST  
 tags: [programming, software development]  
-comments: false  
+comments: true  
 author: Harish Sarma
 gh-repo: harishsarmav/HarishHub
 readtime: true  

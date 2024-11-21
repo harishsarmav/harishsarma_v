@@ -167,7 +167,7 @@ defaults:
     values:
       layout: "default"
       comments: true
-      social-share: true
+      #social-share: true
       
   -
     scope:

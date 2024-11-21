@@ -132,7 +132,7 @@ footer-hover-col: "#1C86EE"
 ####################
 
 # Disqus settings for comments
-disqus: "https://https-harishsarma-v.disqus.com/"
+disqus: "https-harishsarma-v"
 
 ################
 # --- Misc --- #

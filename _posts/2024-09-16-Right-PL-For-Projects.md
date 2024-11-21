@@ -141,4 +141,4 @@ Remember, no language is perfect for every situation. The best language for your
 
 ---
 
-Thank you for reading! If this post resonated with you, I’d love to hear your thoughts. Drop me a message or share your thoughts in the comments below.
+_Thank you for reading! If this post resonated with you, I’d love to hear your thoughts. Drop me a message or share your thoughts in the comments below._

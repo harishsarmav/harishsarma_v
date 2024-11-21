@@ -169,6 +169,6 @@ Click here: 👉
 
 ---
 
-**Thank you for reading!** I hope these iOS shortcuts help you simplify and streamline your daily tasks. If you've tried them out or have any other favorite shortcuts, I’d love to hear your thoughts. Feel free to drop a comment or message me directly! Let’s continue to make the most of our devices and boost productivity together.
+_**Thank you for reading!** I hope these iOS shortcuts help you simplify and streamline your daily tasks. If you've tried them out or have any other favorite shortcuts, I’d love to hear your thoughts. Feel free to drop a comment or message me directly! Let’s continue to make the most of our devices and boost productivity together._
 
-Happy automating! 🚀
+**_Happy automating! 🚀_**

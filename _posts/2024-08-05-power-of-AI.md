@@ -122,4 +122,4 @@ Congratulations! You’ve built a basic AI chatbot using Python. This simple pro
 
 ---
 
-🎉 **Thank you for following along!** I hope you enjoyed building your AI chatbot. Got creative ideas or questions? Share them in the comments below—let’s keep learning and innovating together!
+_🎉 **Thank you for following along!** I hope you enjoyed building your AI chatbot. Got creative ideas or questions? Share them in the comments below—let’s keep learning and innovating together!_

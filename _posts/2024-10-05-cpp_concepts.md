@@ -147,4 +147,4 @@ Understanding and effectively using pointers, classes, and smart pointers is cri
 
 ---
 
-Feel free to share your thoughts about these concepts in the comments below!
+_Feel free to share your thoughts about these concepts in the comments below!_

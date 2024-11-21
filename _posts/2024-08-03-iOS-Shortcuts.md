@@ -169,5 +169,6 @@ Click here: 👉
 
 ---
 
-<p> Feel free to discuss anything, share your ideas, or seek assistance with any shortcuts-related issues. Your thoughts and questions are always welcome! If you love these shortcuts, please drop a ❤️. </p>
-<p> Join the conversation by clicking here 👉🏻 <a href="https://github.com/harishsarmav/HarishHub/discussions/1" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a> </p>
+**Thank you for reading!** I hope these iOS shortcuts help you simplify and streamline your daily tasks. If you've tried them out or have any other favorite shortcuts, I’d love to hear your thoughts. Feel free to drop a comment or message me directly! Let’s continue to make the most of our devices and boost productivity together.
+
+Happy automating! 🚀

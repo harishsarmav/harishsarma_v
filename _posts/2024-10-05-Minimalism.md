@@ -57,5 +57,3 @@ Tech minimalism is more than just a trend; it's a growing movement that allows u
 ---
 
 What’s your take on tech minimalism? Feel free to join the conversation and share your thoughts in the comments below!
-
-<p>Join the discussion by clicking here 👉🏻 <a href="https://github.com/harishsarmav/harishsarma_v/discussions" class="btn" style="color: white; background-color: #82B5F3;">Discussions</a></p>

@@ -40,9 +40,9 @@ layout: page
     </style>
 </head>
 <body>
-    <div class="typing-container">
+   <!-- <div class="typing-container">
         <span id="dynamic-text"></span>
-        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!-- Cursor icon -->
+        <span class="cursor"><i class="fas fa-angle-right"></i></span> # Cursor icon 
     </div>
 
     <script>
@@ -81,7 +81,37 @@ layout: page
         }
 
         type();
-    </script>
+    </script> -->
+
+    <div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+    <span id="rotating-phrases"></span>
+</div>
+ 
+<script>
+    const phrases = [
+        "👋 Welcome to My Website",
+        "💻 A Software Engineer",
+        "📂 Check 'About Me' for more",
+        "🙏 Thank you for visiting!"
+    ];
+    
+    let phraseIndex = 0;
+ 
+    function rotatePhrases() {
+        const element = document.getElementById("rotating-phrases");
+        if (element) {
+            element.textContent = phrases[phraseIndex];
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
+    }
+ 
+    // Rotate phrases every 3 seconds
+    setInterval(rotatePhrases, 3000);
+ 
+    // Display the first phrase immediately
+    rotatePhrases();
+</script>
+
 </body>
 </html>
 

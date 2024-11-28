@@ -8,6 +8,83 @@ layout: page
 
 <!--New content starts here-->
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Text with Cursor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .typing-container {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block; /* Change to inline-block for better positioning */
+            padding: 0 5px;
+            border-right: 2px solid transparent; /* Optional cursor effect */
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 0.7s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+   <div class="typing-container">
+        <span id="dynamic-text"></span>
+        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!--Cursor icon 
+    </div>
+
+    <script>
+    const phrases = [
+        "👋 Welcome to My Website", 
+        "💻 Software Engineer",
+        "📂 Check 'About Me' for more", 
+        "🙏 Thank you for visiting!"
+    ];
+
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let typingSpeed = 100;
+        let erasingSpeed = 50;
+        let pauseBetweenPhrases = 1500;
+
+        function type() {
+            if (currentCharIndex < phrases[currentPhraseIndex].length) {
+                document.getElementById("dynamic-text").innerHTML += phrases[currentPhraseIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, pauseBetweenPhrases);
+            }
+        }
+
+        function erase() {
+            if (currentCharIndex > 0) {
+                document.getElementById("dynamic-text").innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                setTimeout(type, typingSpeed + 500);
+            }
+        }
+
+        type();
+    </script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +113,14 @@ layout: page
         @keyframes blink {
             0%, 100% { opacity: 0; }
             50% { opacity: 1; }
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 600px) {
+            .typing-container {
+                font-size: 14px; /* Smaller size for mobile */
+                word-wrap: break-word; /* Allow long words to break */
+            }
         }
     </style>
 </head>

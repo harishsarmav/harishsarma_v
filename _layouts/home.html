@@ -16,37 +16,38 @@ layout: page
     <title>Dynamic Text with Cursor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .typing-container {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            font-family: 'Courier New', Courier, monospace;
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block; /* Change to inline-block for better positioning */
-            padding: 0 5px;
-            border-right: 2px solid transparent; /* Optional cursor effect */
-        }
+    .typing-container {
+        font-size: 24px; /* Default size for larger screens */
+        font-weight: bold;
+        color: #333;
+        font-family: 'Courier New', Courier, monospace;
+        white-space: normal; /* Allow text to wrap */
+        overflow: hidden;
+        display: inline-block;
+        padding: 0 5px;
+        border-right: 2px solid transparent;
+        max-width: 100%; /* Ensure container does not exceed screen width */
+        box-sizing: border-box; /* Include padding in element width */
+    }
 
-        .cursor {
-            display: inline-block;
-            animation: blink 0.7s steps(1) infinite;
-        }
+    .cursor {
+        display: inline-block;
+        animation: blink 0.7s steps(1) infinite;
+    }
 
-        @keyframes blink {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
-        }
+    @keyframes blink {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+    }
 
-        /* Responsive CSS for mobile */
+    /* Responsive CSS for mobile */
     @media (max-width: 600px) {
         .typing-container {
-            font-size: 18px; /* Larger size for better readability */
-            word-wrap: break-word; /* Allow long words to break */
-            max-width: 100%; /* Ensure it doesn't exceed screen width */
-            }
+            font-size: 20px; /* Adjusted size for better readability */
+            word-break: break-word; /* Break long words */
         }
-    </style>
+    }
+</style>
 </head>
 <body>
    <div class="typing-container">

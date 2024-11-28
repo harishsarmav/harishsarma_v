@@ -16,55 +16,58 @@ layout: page
     <title>Dynamic Text with Cursor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-    .typing-container {
-        font-size: 24px; /* Default size for larger screens */
-        font-weight: bold;
-        color: #333;
-        font-family: 'Courier New', Courier, monospace;
-        white-space: normal; /* Allow text to wrap */
-        overflow: hidden;
-        display: inline-block;
-        padding: 0 5px;
-        border-right: 2px solid transparent;
-        max-width: 100%; /* Ensure container does not exceed screen width */
-        box-sizing: border-box; /* Include padding in element width */
-        min-height: 1.5em; /* Ensure enough height for a single line of text */
-        transition: height 0.3s ease; /* Smooth transition for height changes */
-    }
-
-    .cursor {
-        display: inline-block;
-        animation: blink 0.7s steps(1) infinite;
-    }
-
-    @keyframes blink {
-        0%, 100% { opacity: 0; }
-        50% { opacity: 1; }
-    }
-
-    /* Responsive CSS for mobile */
-    @media (max-width: 600px) {
         .typing-container {
-            font-size: 20px; /* Adjusted size for better readability */
-            word-break: break-word; /* Break long words */
-            min-height: 1.8em; /* Adjust for slightly larger font size */
+            width: 100%; /* Full width */
+            height: 50px; /* Fixed height for the container */
+            overflow: hidden; /* Hide overflow content */
+            position: relative; /* Position relative for absolute positioning inside */
+            background-color: #f0f0f0; /* Optional background color */
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
         }
-    }
-</style>
+
+        .scrolling-text {
+            position: absolute;
+            white-space: nowrap;
+            animation: scrollText 10s linear infinite; /* Adjust duration as needed */
+        }
+
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .cursor {
+            display: inline-block;
+            animation: blink 0.7s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-   <div class="typing-container">
-        <span id="dynamic-text"></span>
-        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!--Cursor icon--> 
+    <div class="typing-container">
+        <div class="scrolling-text">
+            <span id="dynamic-text"></span>
+            <span class="cursor"><i class="fas fa-angle-right"></i></span> <!--Cursor icon-->
+        </div>
     </div>
 
     <script>
-    const phrases = [
-        "👋 Welcome to My Website", 
-        "💻 I'm a Software Engineer",
-        "📂 Check the 'About Me' for more details", 
-        "🙏 Thank you for visiting!"
-    ];
+        const phrases = [
+            "👋 Welcome to My Website", 
+            "💻 I'm a Software Engineer",
+            "📂 Check the 'About Me' for more details", 
+            "🙏 Thank you for visiting!"
+        ];
 
         let currentPhraseIndex = 0;
         let currentCharIndex = 0;
@@ -97,7 +100,6 @@ layout: page
     </script>
 </body>
 </html>
-
 <!-- Old content is from here-->
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">

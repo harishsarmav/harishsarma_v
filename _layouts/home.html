@@ -13,27 +13,41 @@ layout: page
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Text with Cursor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Bidirectional Scrolling Text</title>
     <style>
-        .typing-container {
-            width: 100%; /* Full width */
-            height: 50px; /* Fixed height for the container */
-            overflow: hidden; /* Hide overflow content */
-            position: relative; /* Position relative for absolute positioning inside */
-            background-color: #f0f0f0; /* Optional background color */
+        .scrolling-text-container {
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0;
             display: flex;
-            align-items: center; /* Center vertically */
-            justify-content: center; /* Center horizontally */
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px; /* Space between text lines */
         }
 
-        .scrolling-text {
+        .scrolling-text-left {
             position: absolute;
             white-space: nowrap;
-            animation: scrollText 10s linear infinite; /* Adjust duration as needed */
+            animation: scrollLeft 10s linear infinite;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        @keyframes scrollText {
+        .scrolling-text-right {
+            position: absolute;
+            white-space: nowrap;
+            animation: scrollRight 10s linear infinite;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @keyframes scrollLeft {
             from {
                 transform: translateX(100%);
             }
@@ -42,62 +56,32 @@ layout: page
             }
         }
 
-        .cursor {
-            display: inline-block;
-            animation: blink 0.7s steps(1) infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
+        @keyframes scrollRight {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="typing-container">
-        <div class="scrolling-text">
-            <span id="dynamic-text"></span>
-            <span class="cursor"><i class="fas fa-angle-right"></i></span> <!--Cursor icon-->
+    <div class="scrolling-text-container">
+        <div class="scrolling-text-left">
+            Welcome to My Website - 💻 I'm a Software Engineer
+        </div>
+    </div>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text-right">
+            📂 Check the 'About Me' for more details - 🙏 Thank you for visiting!
         </div>
     </div>
 
-    <script>
-        const phrases = [
-            "👋 Welcome to My Website", 
-            "💻 I'm a Software Engineer",
-            "📂 Check the 'About Me' for more details", 
-            "🙏 Thank you for visiting!"
-        ];
-
-        let currentPhraseIndex = 0;
-        let currentCharIndex = 0;
-        let typingSpeed = 100;
-        let erasingSpeed = 50;
-        let pauseBetweenPhrases = 1500;
-
-        function type() {
-            if (currentCharIndex < phrases[currentPhraseIndex].length) {
-                document.getElementById("dynamic-text").innerHTML += phrases[currentPhraseIndex].charAt(currentCharIndex);
-                currentCharIndex++;
-                setTimeout(type, typingSpeed);
-            } else {
-                setTimeout(erase, pauseBetweenPhrases);
-            }
-        }
-
-        function erase() {
-            if (currentCharIndex > 0) {
-                document.getElementById("dynamic-text").innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
-                currentCharIndex--;
-                setTimeout(erase, erasingSpeed);
-            } else {
-                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-                setTimeout(type, typingSpeed + 500);
-            }
-        }
-
-        type();
-    </script>
+    <!-- Other page content -->
+    <div>
+        <p>Here is some content on the page. The scrolling text above should not push this content down.</p>
+    </div>
 </body>
 </html>
 <!-- Old content is from here-->

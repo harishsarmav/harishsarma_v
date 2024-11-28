@@ -28,6 +28,8 @@ layout: page
         border-right: 2px solid transparent;
         max-width: 100%; /* Ensure container does not exceed screen width */
         box-sizing: border-box; /* Include padding in element width */
+        min-height: 1.5em; /* Ensure enough height for a single line of text */
+        transition: height 0.3s ease; /* Smooth transition for height changes */
     }
 
     .cursor {
@@ -45,6 +47,7 @@ layout: page
         .typing-container {
             font-size: 20px; /* Adjusted size for better readability */
             word-break: break-word; /* Break long words */
+            min-height: 1.8em; /* Adjust for slightly larger font size */
         }
     }
 </style>
@@ -59,7 +62,7 @@ layout: page
     const phrases = [
         "👋 Welcome to My Website", 
         "💻 I'm a Software Engineer",
-        "📂 Check the 'About Me' section for more details", 
+        "📂 Check the 'About Me' for more details", 
         "🙏 Thank you for visiting!"
     ];
 

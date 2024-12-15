@@ -22,6 +22,8 @@ The highlight of the lunch was something I wasn’t expecting—my **manager and
 
 ![Team Lunch](/assets/img/TeamLunch-2.jpg)
 
+<img src="assets/img/TeamLunch-2.jpg" alt="Description" style="width:100%; max-width:600px; display:block; margin:auto;" />
+
 ### **The Big Day - December 13th** 🥳
 
 On my actual birthday, I started my day on a peaceful note by visiting a **temple**. It gave me a moment of calm and gratitude as I reflected on everything I’ve been blessed with.
@@ -36,9 +38,13 @@ Post lunch, we decided to hit the **shopping mall**, where I received a surprise
 
 ![Team Lunch](/assets/img/TeamLunch.jpg)
 
+<img src="assets/img/TeamLunch.jpg" alt="Description" style="width:100%; max-width:600px; display:block; margin:auto;" />
+
 - **Thoughtful Gifts and Moments:** The time spent with friends and the gift from my close friend made me realize how lucky I am to have such people in my life.
 
 ![Team Lunch](/assets/img/gift.jpg)
+
+<img src="assets/img/gift.jpg" alt="Description" style="width:100%; max-width:600px; display:block; margin:auto;" />
 
 ### **Reflections on the Day** 🌟
 

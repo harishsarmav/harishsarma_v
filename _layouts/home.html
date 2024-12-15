@@ -13,44 +13,94 @@ layout: page
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Text with Icons</title>
+    <title>Typing Text with Icons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .scrolling-text-container {
+        .typing-container {
             width: 100%;
-            height: 50px;
+            height: auto;
             overflow: hidden;
             position: relative;
             background-color: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .scrolling-text {
-            position: absolute;
-            white-space: nowrap;
-            animation: scrollText 20s linear infinite;
             font-size: 24px;
             font-weight: bold;
             color: #333;
             font-family: 'Courier New', Courier, monospace;
+            padding: 10px;
         }
 
-        @keyframes scrollText {
+        .typing-text {
+            position: absolute;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            flex-wrap: wrap; /* Allow wrapping for long text */
+            text-align: center; /* Center align text */
+        }
+
+        .part {
+            display: inline-block;
+            opacity: 0;
+            animation: typing 3s steps(30) 0s 1 normal forwards, fadeIn 1s ease-in-out forwards;
+            margin-right: 15px;
+        }
+
+        .part:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .part:nth-child(2) {
+            animation-delay: 4s;
+        }
+
+        .part:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        .part:nth-child(4) {
+            animation-delay: 12s;
+        }
+
+        @keyframes typing {
             from {
-                transform: translateX(100%);
+                width: 0;
             }
             to {
-                transform: translateX(-100%);
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive font size for small screens */
+        @media (max-width: 600px) {
+            .typing-container {
+                font-size: 18px;
+            }
+            .part {
+                margin-right: 10px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="scrolling-text-container">
-        <div class="scrolling-text">
-            🚂 All aboard!&nbsp;&nbsp;&nbsp;&nbsp; 👋 Welcome to My Website!&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;💻 I'm a Software Engineer&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;🛩️ Fly through my 'About Me' section for more details! 🌟&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; 👇👇👇👇😀 Check out my blogs below! 🤚🤚🤚🤚&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;🙏 Thank you for visiting!
+    <div class="typing-container">
+        <div class="typing-text">
+            <div class="part">🚂 All aboard! </div>
+            <div class="part">👋 Welcome to My Website! </div>
+            <div class="part">💻 I'm a Software Engineer </div>
+            <div class="part">🌟 Check out my blogs below!<br>🙏 Thank you for visiting!</div>
         </div>
     </div>
 </body>

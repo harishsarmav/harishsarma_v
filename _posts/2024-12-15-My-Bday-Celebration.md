@@ -20,7 +20,7 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
-![Team Lunch](assets/img/TeamLunch-2.jpg)
+![Team Lunch](/assets/img/TeamLunch-2.jpg)
 
 ### **The Big Day - December 13th** 🥳
 
@@ -33,9 +33,12 @@ Post lunch, we decided to hit the **shopping mall**, where I received a surprise
 ### **What Made This Birthday Special?** 💖
 
 - **The Surprise Celebration:** My team celebrating my birthday in advance, without me knowing, was the most heartwarming part of it all.
-![Team Lunch](assets/img/TeamLunch.jpg)
+
+![Team Lunch](/assets/img/TeamLunch.jpg)
+
 - **Thoughtful Gifts and Moments:** The time spent with friends and the gift from my close friend made me realize how lucky I am to have such people in my life.
-![Gift](assets/img/gift.jpg)
+
+![Team Lunch](/assets/img/gift.jpg)
 
 ### **Reflections on the Day** 🌟
 

@@ -20,8 +20,6 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
-![Team](https://github.com/harishsarmav/HarishHub/blob/master/assets/img/TeamLunch-2.jpg)
-
 ### **The Big Day - December 13th** 🥳
 
 On my actual birthday, I started my day on a peaceful note by visiting a **temple**. It gave me a moment of calm and gratitude as I reflected on everything I’ve been blessed with.
@@ -34,11 +32,7 @@ Post lunch, we decided to hit the **shopping mall**, where I received a surprise
 
 - **The Surprise Celebration:** My team celebrating my birthday in advance, without me knowing, was the most heartwarming part of it all.
 
-![Team Lunch](https://github.com/harishsarmav/HarishHub/blob/master/assets/img/TeamLunch.jpg)
-
 - **Thoughtful Gifts and Moments:** The time spent with friends and the gift from my close friend made me realize how lucky I am to have such people in my life.
-
-![Gift](https://github.com/harishsarmav/HarishHub/blob/master/assets/img/gift.jpg)
 
 ### **Reflections on the Day** 🌟
 

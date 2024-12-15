@@ -13,77 +13,46 @@ layout: page
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Text with Cursor</title>
+    <title>Scrolling Text with Icons</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .typing-container {
+        .scrolling-text-container {
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scrolling-text {
+            position: absolute;
+            white-space: nowrap;
+            animation: scrollText 20s linear infinite;
             font-size: 24px;
             font-weight: bold;
             color: #333;
             font-family: 'Courier New', Courier, monospace;
-            white-space: nowrap;
-            overflow: hidden;
-            display: inline-block; /* Change to inline-block for better positioning */
-            padding: 0 5px;
-            border-right: 2px solid transparent; /* Optional cursor effect */
         }
 
-        .cursor {
-            display: inline-block;
-            animation: blink 0.7s steps(1) infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="typing-container">
-        <span id="dynamic-text"></span>
-        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!-- Cursor icon -->
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            🚂 All aboard!&nbsp;&nbsp;&nbsp;&nbsp; 👋 Welcome to My Website!&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;💻 I'm a Software Engineer&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;🛩️ Fly through my 'About Me' section for more details! 🌟&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp; 👇👇👇👇😀 Check out my blogs below! 🤚🤚🤚🤚&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;🙏 Thank you for visiting!
+        </div>
     </div>
-
-    <script>
-        const phrases = [
-         "👋 Welcome to My Website",
-         "💻 Software Engineer",
-         "🤖 AI Enthusiast",
-         "🌊 Vizagite",
-         "📚 Continous Learner",
-         "🔍 Tech Explorer"
-        ];
-
-        let currentPhraseIndex = 0;
-        let currentCharIndex = 0;
-        let typingSpeed = 100;
-        let erasingSpeed = 50;
-        let pauseBetweenPhrases = 1500;
-
-        function type() {
-            if (currentCharIndex < phrases[currentPhraseIndex].length) {
-                document.getElementById("dynamic-text").innerHTML += phrases[currentPhraseIndex].charAt(currentCharIndex);
-                currentCharIndex++;
-                setTimeout(type, typingSpeed);
-            } else {
-                setTimeout(erase, pauseBetweenPhrases);
-            }
-        }
-
-        function erase() {
-            if (currentCharIndex > 0) {
-                document.getElementById("dynamic-text").innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
-                currentCharIndex--;
-                setTimeout(erase, erasingSpeed);
-            } else {
-                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
-                setTimeout(type, typingSpeed + 500);
-            }
-        }
-
-        type();
-    </script>
 </body>
 </html>
 

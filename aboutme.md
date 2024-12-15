@@ -26,7 +26,7 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 - **Specialties**: 
   - C++
   - Python _(currently learning)_
-- **Career Goal**: To become an expert in C++ development and explore broader opportunities in AI-driven software.
+- **Career Goal**: To become a versatile software developer with expertise in C++ and C#, leveraging these skills to build innovative, scalable solutions. Aspire to explore advanced AI applications, contribute to cutting-edge software projects, and evolve into a thought leader in software development and AI-driven technologies.
 
 ---
 

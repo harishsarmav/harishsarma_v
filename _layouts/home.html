@@ -13,96 +13,76 @@ layout: page
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Text with Icons</title>
+    <title>Dynamic Text with Cursor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         .typing-container {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            position: relative;
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 24px;
             font-weight: bold;
             color: #333;
             font-family: 'Courier New', Courier, monospace;
-            padding: 10px;
-        }
-
-        .typing-text {
-            position: absolute;
             white-space: nowrap;
-            display: flex;
-            justify-content: center;
-            font-size: 24px;
-            flex-wrap: wrap; /* Allow wrapping for long text */
-            text-align: center; /* Center align text */
+            overflow: hidden;
+            display: inline-block; /* Change to inline-block for better positioning */
+            padding: 0 5px;
+            border-right: 2px solid transparent; /* Optional cursor effect */
         }
 
-        .part {
+        .cursor {
             display: inline-block;
-            opacity: 0;
-            animation: typing 3s steps(30) 0s 1 normal forwards, fadeIn 1s ease-in-out forwards;
-            margin-right: 15px;
+            animation: blink 0.7s steps(1) infinite;
         }
 
-        .part:nth-child(1) {
-            animation-delay: 0s;
-        }
-
-        .part:nth-child(2) {
-            animation-delay: 4s;
-        }
-
-        .part:nth-child(3) {
-            animation-delay: 8s;
-        }
-
-        .part:nth-child(4) {
-            animation-delay: 12s;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Responsive font size for small screens */
-        @media (max-width: 600px) {
-            .typing-container {
-                font-size: 18px;
-            }
-            .part {
-                margin-right: 10px;
-            }
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <div class="typing-container">
-        <div class="typing-text">
-            <div class="part">🚂 All aboard! </div>
-            <div class="part">👋 Welcome to My Website! </div>
-            <div class="part">💻 I'm a Software Engineer </div>
-            <div class="part">🌟 Check out my blogs below!<br>🙏 Thank you for visiting!</div>
-        </div>
+        <span id="dynamic-text"></span>
+        <span class="cursor"><i class="fas fa-angle-right"></i></span> <!-- Cursor icon -->
     </div>
+
+    <script>
+        const phrases = [
+         "👋 Welcome to My Website",
+         "💻 C++ Developer",
+         "🤖 AI Enthusiast",
+         "🌊 Vizagite",
+         "🔍 Explore more at /About me",
+        ];
+
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let typingSpeed = 100;
+        let erasingSpeed = 50;
+        let pauseBetweenPhrases = 1500;
+
+        function type() {
+            if (currentCharIndex < phrases[currentPhraseIndex].length) {
+                document.getElementById("dynamic-text").innerHTML += phrases[currentPhraseIndex].charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                setTimeout(erase, pauseBetweenPhrases);
+            }
+        }
+
+        function erase() {
+            if (currentCharIndex > 0) {
+                document.getElementById("dynamic-text").innerHTML = phrases[currentPhraseIndex].substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(erase, erasingSpeed);
+            } else {
+                currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                setTimeout(type, typingSpeed + 500);
+            }
+        }
+
+        type();
+    </script>
 </body>
 </html>
 

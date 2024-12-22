@@ -97,17 +97,29 @@ navbar-var-length: false
 ##################################
 
 # Personalize the colors in your website
-page-col: "#F5F5F5"
-text-col: "#333333"
-link-col: "#1E90FF"
-hover-col: "#1C86EE"
-navbar-col: "#FFFFFF"
-navbar-text-col: "#333333"
-navbar-border-col: "#DDDDDD"
-footer-col: "#F5F5F5"
-footer-text-col: "#666666"
-footer-link-col: "#1E90FF"
-footer-hover-col: "#1C86EE"
+# page-col: "#F5F5F5"
+# text-col: "#333333"
+# link-col: "#1E90FF"
+# hover-col: "#1C86EE"
+# navbar-col: "#FFFFFF"
+# navbar-text-col: "#333333"
+# navbar-border-col: "#DDDDDD"
+# footer-col: "#F5F5F5"
+# footer-text-col: "#666666"
+# footer-link-col: "#1E90FF"
+# footer-hover-col: "#1C86EE"
+
+page-col: "#000022"  # Deep space blue
+text-col: "#EAEAEA"  # Light gray for text
+link-col: "#4FD1C5"  # Turquoise for links
+hover-col: "#81E6D9" # Lighter turquoise for hover
+navbar-col: "rgba(0, 0, 0, 0.8)"  # Semi-transparent black
+navbar-text-col: "#FFFFFF"  # White for navbar text
+footer-col: "#000022"  # Match page background
+footer-text-col: "#B0B0B0"  # Subtle gray for footer text
+footer-link-col: "#4FD1C5"  # Match links
+footer-hover-col: "#81E6D9"  # Match hover
+
 
 # Navbar and footer background images
 navbar-img: "/HarishHub/assets/img/milkyway.jpg"

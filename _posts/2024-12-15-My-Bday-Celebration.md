@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Memorable Birthday Celebration 🎉
 subtitle: Celebrating with Team, Friends, and Cherished Moments
 cover-img: "assets/img/Posts/party.jpg"

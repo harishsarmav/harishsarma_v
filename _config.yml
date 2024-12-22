@@ -185,6 +185,7 @@ defaults:
       comments: true
       social-share: true
       show-subscribe: true
+      show-share: true
       
   -
     scope:

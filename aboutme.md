@@ -5,8 +5,8 @@ subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate
 share-title: Harish Sarma | About me
 ---
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img style="width: 150px; height: auto;" alt="coding" src="/HarishHub/assets/img/Posts/programmer.gif">
+<div style="display: flex; align-items: center; gap: 30px;">
+  <img style="width: 300px; height: auto;" alt="coding" src="/HarishHub/assets/img/Posts/programmer.gif">
   <div>
     <h2>👋 Hey there!</h2>
     <p>

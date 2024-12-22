@@ -21,12 +21,10 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
 <div style="text-align:center;">
-  <a href="/assets/img/My-Bday-Celebration/TeamLunch.png">
-    <img src="/assets/img/My-Bday-Celebration/TeamLunch.png" alt="Team">
+  <a href="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png">
+    <img src="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png" alt="Team">
   </a>
 </div>
-
-![Team Lunch](/assets/img/My-Bday-Celebration/TeamLunch.png)
 
 ### **The Big Day - December 13th** 🥳
 

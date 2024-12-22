@@ -20,7 +20,7 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
-<div style="float: right; margin-left: 20px;">
+<div style="text-align:right;">
   <a href="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png">
     <img src="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png" alt="Team" style="width: 50%; max-width: 300px;">
   </a>
@@ -32,9 +32,10 @@ On my actual birthday, I started my day on a peaceful note by visiting a **templ
 
 Later in the day, I celebrated again with my friends. We went for **lunch at The Globe Grub Restaurant**, and the experience was fantastic. The food was delicious, and the conversations made it even more memorable.
 
-Post lunch, we decided to hit the **shopping mall**, where I received a surprise gift from one of my close friends—a brand new pair of **Puma shoes**! 👟 It was thoughtful, unexpected, and something I’ll treasure for a long time.
+Post lunch, we decided to hit the **shopping mall**, where I received a surprise gift from one of my close friends—a brand new pair of 
+**Puma shoes**! 👟 It was thoughtful, unexpected, and something I’ll treasure for a long time.
 
-<div style="float: right; margin-left: 20px;">
+<div style="text-align:right;">
   <a href="/HarishHub/assets/img/My-Bday-Celebration/gift.png">
     <img src="/HarishHub/assets/img/My-Bday-Celebration/gift.png" alt="Team" style="width: 50%; max-width: 300px;">
   </a>

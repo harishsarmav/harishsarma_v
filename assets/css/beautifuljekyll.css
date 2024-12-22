@@ -99,30 +99,52 @@ hr.small {
 
 /* Gallery starting*/
 
+/* Container Styling */
 .gallery-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  max-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Grid Layout for Images */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 20px;
 }
 
-.gallery img {
+/* Individual Items */
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+  display: block;
+  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
+/* Hover Effects */
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 /* Gallery ending */

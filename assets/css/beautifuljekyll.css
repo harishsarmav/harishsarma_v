@@ -18,6 +18,11 @@ layout: null
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
+  --page-col: #121212;
+  --text-col: #ffffff;
+  --link-col: #bb86fc;
+  --hover-col: #3700b3;
+
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -31,20 +36,14 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
-  font-size: 1.125rem;
-  color: var(--text-col);
   position: relative;
-  background-color: var(--page-col);
-  {% if site.page-img %}
-  background-image: url({{ site.page-img | relative_url }});
+  color: var(--text-col);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url({{ site.page-img | relative_url }});
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  {% endif %}
-  overflow-wrap: break-word;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
+
 body > main {
   flex: 1;
 }
@@ -96,6 +95,20 @@ hr.small {
   border-color: inherit;
   border-radius: 0.1875rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--page-col);
+    color: var(--text-col);
+  }
+  a {
+    color: var(--link-col);
+  }
+  a:hover {
+    color: var(--hover-col);
+  }
+}
+
 
 /* Gallery starting*/
 

@@ -22,8 +22,8 @@ The highlight of the lunch was something I wasn’t expecting—my **manager and
 
 <div style="text-align:center;">
   <a href="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png">
-  <p> Team Lunch - 📍AB's Gachibowli </p>
     <img src="/HarishHub/assets/img/My-Bday-Celebration/TeamLunch.png" alt="Team" style="width: 50%; max-width: 250px;">
+    <p> Team Lunch - 📍AB's Gachibowli </p>
   </a>
 </div>
 
@@ -38,8 +38,8 @@ Post lunch, we decided to hit the **shopping mall**, where I received a surprise
 
 <div style="text-align:center;">
   <a href="/HarishHub/assets/img/My-Bday-Celebration/gift.png">
-  <p> Brand new Darter Pro Fade Puma shoes </p>
     <img src="/HarishHub/assets/img/My-Bday-Celebration/gift.png" alt="Team" style="width: 50%; max-width: 250px;">
+    <p> Brand new Darter Pro Fade Puma shoes 👟</p>
   </a>
 </div>
 

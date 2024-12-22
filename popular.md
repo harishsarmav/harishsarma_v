@@ -9,7 +9,6 @@ cover-img:
 <div class="list-filters">
   <a href="/" class="list-filter">All posts</a>
   <a href="/popular" class="list-filter filter-selected">Most Popular</a>
-  <a href="/tutorials" class="list-filter">Tutorials</a>
   <a href="/tags" class="list-filter">Index</a>
 </div>
 

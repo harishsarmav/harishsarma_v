@@ -131,7 +131,8 @@ mobile-theme-col: "#0085A1"
 
 # Custom CSS and JS files
 site-css:
-  - "/assets/css/custom-style.css"
+#  - "/assets/css/custom-style.css"
+  - "/assets/css/beautifuljekylls.css"
 site-js:
   - "/assets/js/beautifuljekyll.js"
 

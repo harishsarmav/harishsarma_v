@@ -146,7 +146,6 @@ hr.small {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
-
 /* Gallery ending */
 
 /* fix in-page anchors to not be behind fixed header */

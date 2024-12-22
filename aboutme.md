@@ -4,11 +4,17 @@ title: About me
 subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate software engineer based in India.
 share-title: Harish Sarma | About me
 ---
-<img style="display: block; margin: 0 auto;" alt="coding" width="498" src="/HarishHub/assets/img/Posts/programmer.gif">
 
-## 👋 Hey there!
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img style="width: 150px; height: auto;" alt="coding" src="/HarishHub/assets/img/Posts/programmer.gif">
+  <div>
+    <h2>👋 Hey there!</h2>
+    <p>
+      I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
+    </p>
+  </div>
+</div>
 
-I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
 
 ### Some Fun Facts About Me:
 - 🎮 **Gaming Enthusiast**: Whether it’s exploring open-world games or solving puzzles, I love the challenge.

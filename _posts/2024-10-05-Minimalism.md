@@ -2,7 +2,7 @@
 layout: post
 title: Why Tech Minimalism is Gaining Popularity
 subtitle: The Rise of Simple, Intentional Tech Use
-cover-img: "assets/img/tech_minimalism.jpg"
+cover-img: "assets/img/Posts/tech_minimalism.jpg"
 date: 2024-10-05 18:00:00 +0530
 tags: [Minimalism, Technology, Lifestyle]
 comments: true

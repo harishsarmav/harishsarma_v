@@ -2,7 +2,7 @@
 layout: post
 title: Understanding Key C++ Concepts--> Pointers, Classes, and Smart Pointers
 subtitle: A Deep Dive into Core C++ Concepts for Better Programming
-cover-img: "assets/img/cpp.jpg"
+cover-img: "assets/img/Posts/cpp.jpg"
 date: 2024-10-05 16:50:00 IST
 tags: [C++, programming]
 comments: true

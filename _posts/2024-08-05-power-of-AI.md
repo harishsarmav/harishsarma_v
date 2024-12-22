@@ -2,7 +2,7 @@
 layout: post
 title: How to Build a Simple AI Chatbot
 subtitle: A Hands-On Guide to Creating Your First AI Chatbot
-cover-img: "assets/img/ai.jpg"
+cover-img: "assets/img/Posts/ai.jpg"
 date: 2024-08-04 01:01:00 IST
 tags: [ai, software development]
 comments: true

@@ -2,7 +2,7 @@
 layout: post
 title: Unlocking the Power of iOS Shortcuts
 subtitle: Simplify Your Life with Powerful Automations
-cover-img: "assets/img/shortcut.jpg"
+cover-img: "assets/img/Posts/shortcut.jpg"
 date:   2024-08-03 12:40:00 IST
 tags: [ios shortcuts, Lifestyle,Technology]
 comments: true

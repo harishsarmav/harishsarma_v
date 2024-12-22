@@ -7,7 +7,7 @@ date:   2024-08-03 12:40:00 IST
 tags: [ios shortcuts, Lifestyle,Technology]
 comments: true
 author: Harish sarma
-gh-repo: harishsarmav/HarishHub
+permalink: /blog/iOS-Shortcuts/
 readtime: true
 ---
 

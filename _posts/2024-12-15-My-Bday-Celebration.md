@@ -35,8 +35,8 @@ Later in the day, I celebrated again with my friends. We went for **lunch at The
 Post lunch, we decided to hit the **shopping mall**, where I received a surprise gift from one of my close friends—a brand new pair of **Puma shoes**! 👟 It was thoughtful, unexpected, and something I’ll treasure for a long time.
 
 <div style="text-align:center;">
-  <a href="/assets/img/My-Bday-Celebration/gift.png">
-    <img src="/assets/img/My-Bday-Celebration/gift.png" alt="Gift">
+  <a href="/HarishHub/assets/img/My-Bday-Celebration/gift.png">
+    <img src="/HarishHub/assets/img/My-Bday-Celebration/gift.png" alt="Gift">
   </a>
 </div>
 

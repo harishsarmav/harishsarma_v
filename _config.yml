@@ -183,7 +183,8 @@ defaults:
     values:
       layout: "default"
       comments: true
-      #social-share: true
+      social-share: true
+      show-subscribe: true
       
   -
     scope:
@@ -191,11 +192,6 @@ defaults:
     values:
       layout: "page"
 
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
 # Excluded files from production site
 exclude:
   - CHANGELOG.md

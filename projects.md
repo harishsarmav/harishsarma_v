@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Projects
 share-title: Harish Sarma | Projects
 permalink: /projects/

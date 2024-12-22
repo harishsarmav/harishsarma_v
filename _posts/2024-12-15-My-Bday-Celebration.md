@@ -2,7 +2,8 @@
 layout: post
 title: A Memorable Birthday Celebration 🎉
 subtitle: Celebrating with Team, Friends, and Cherished Moments
-cover-img: "assets/img/Posts/birthday_celebration.jpg"
+cover-img: "assets/img/Posts/party.jpg"
+thumbnail-img: "assets/img/Posts/birthday_celebration.jpg"
 date: 2024-12-15 21:25:00 IST
 tags: [Personal, Celebrations, Memories]
 comments: true

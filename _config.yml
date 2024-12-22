@@ -22,7 +22,6 @@ navbar-links:
   Blog: "/"
   About Me: "aboutme"
   Projects: "projects"
-  Gallery: "gallery"
   Contact:
     - Instagram: "https://instagram.com/i_am_harishsarma"
     - X: "https://x.com/harishsarma_v"
@@ -32,6 +31,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn Markdown: "https://www.markdowntutorial.com/"
+    - My Gallery: "gallery"
   
 future: true
 
@@ -53,7 +53,7 @@ social-network-links:
   twitter: harishsarma_v
   reddit: Relevant-Plantain615
   linkedin: harishsarmav
-  instagram: i_am_harishsarma
+  instagram: the.harish.way
   facebook: harishsarmavelavalapalli
 
 ###########################

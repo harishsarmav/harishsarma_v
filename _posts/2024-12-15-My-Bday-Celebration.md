@@ -26,6 +26,8 @@ The highlight of the lunch was something I wasn’t expecting—my **manager and
   </a>
 </div>
 
+![Team Lunch](/assets/img/My-Bday-Celebration/TeamLunch.png)
+
 ### **The Big Day - December 13th** 🥳
 
 On my actual birthday, I started my day on a peaceful note by visiting a **temple**. It gave me a moment of calm and gratitude as I reflected on everything I’ve been blessed with.

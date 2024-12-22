@@ -36,23 +36,18 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 
 ---
 
-### 🎯 My Learning Journey
-- **🏊‍♂️ Swimming**: Recently took up swimming as part of my fitness routine on 17th Oct 2024. 
-_It’s been <span id="swimming-days"></span> days, and I’m already hooked!_
-- **🤖 AI & Python**: Dedicating time to improving my AI and Python programming skills.
+### 🎯 My Learning Journey  
 
-<script>
-  function calculateDaysSince(dateString, elementId) {
-    const startDate = new Date(dateString);
-    const today = new Date();
-    const timeDiff = today - startDate;
-    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    document.getElementById(elementId).textContent = daysDiff;
-  }
+#### 🏊‍♂️ **Swimming**  
+After two months of consistent practice, I’ve made great progress:  
+- ✅ **Freestyle** mastered  
+- ✅ **Backstroke** mastered  
+- ✅ **Breaststroke** mastered  
+- 🚧 **Butterfly** is still a work in progress  
+I’ve also gained confidence in floating on my back effortlessly. Swimming has been an amazing addition to my fitness journey!
 
-  // Calculate days since the given start dates
-  calculateDaysSince("2024-10-17", "swimming-days");
-</script>
+#### 🤖 **AI & Python**  
+Continuing to explore and improve my skills in AI and Python programming.
 
 ---
 

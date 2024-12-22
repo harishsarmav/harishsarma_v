@@ -21,8 +21,8 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
 <div style="text-align:center;">
-  <a href="/assets/img/TeamLunch.jpg">
-    <img src="/assets/img/TeamLunch.jpg" alt="Team">
+  <a href="/assets/img/TeamLunch.png">
+    <img src="/assets/img/TeamLunch.png" alt="Team">
   </a>
 </div>
 
@@ -35,8 +35,8 @@ Later in the day, I celebrated again with my friends. We went for **lunch at The
 Post lunch, we decided to hit the **shopping mall**, where I received a surprise gift from one of my close friends—a brand new pair of **Puma shoes**! 👟 It was thoughtful, unexpected, and something I’ll treasure for a long time.
 
 <div style="text-align:center;">
-  <a href="/assets/img/gift.jpg">
-    <img src="/assets/img/gift.jpg" alt="Gift">
+  <a href="/assets/img/gift.png">
+    <img src="/assets/img/gift.png" alt="Gift">
   </a>
 </div>
 

@@ -192,6 +192,11 @@ defaults:
     values:
       layout: "page"
 
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
 # Excluded files from production site
 exclude:
   - CHANGELOG.md

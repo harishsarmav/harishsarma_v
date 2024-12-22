@@ -4,7 +4,7 @@ title: About me
 subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate software engineer based in India.
 share-title: Harish Sarma | About me
 ---
-<!-- <img style="display: block; margin: 0 auto;" alt="coding" width="498" src="assets/img/programmer.gif"> -->
+<img style="display: block; margin: 0 auto;" alt="coding" width="498" src="/HarishHub/assets/img/Posts/programmer.gif">
 
 ## 👋 Hey there!
 
@@ -37,18 +37,15 @@ I'm someone who loves learning, creating, and exploring. From tech innovations t
 ---
 
 ### 🎯 My Learning Journey  
+- **🏊‍♂️ Swimming**:  
+  I recently completed two months of swimming practice and learned:  
+  - **Freestyle**  
+  - **Backstroke**  
+  - **Breaststroke**  
+  I’m also able to float on my back comfortably. Butterfly stroke is next on my list!  
 
-#### 🏊‍♂️ **Swimming**  
-After two months of consistent practice, I’ve made great progress:  
-- ✅ **Freestyle** mastered  
-- ✅ **Backstroke** mastered  
-- ✅ **Breaststroke** mastered  
-- 🚧 **Butterfly** is still a work in progress  
-I’ve also gained confidence in floating on my back effortlessly. Swimming has been an amazing addition to my fitness journey!
-
-#### 🤖 **AI & Python**  
-Continuing to explore and improve my skills in AI and Python programming.
-
+- **🤖 AI & Python**:  
+  Continuing my journey to enhance my skills in AI and Python programming.
 ---
 
 **_Thank you for visiting my page_**! 🙏

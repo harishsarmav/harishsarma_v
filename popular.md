@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Hi, I'm Harish"
 css: "/assets/css/index.css"
 share-description: "List of all the most popular posts by Harish Sarma."

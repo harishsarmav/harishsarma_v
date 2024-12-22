@@ -5,16 +5,15 @@ subtitle: Welcome to my corner of the internet! I’m Harish Sarma, a passionate
 share-title: Harish Sarma | About me
 ---
 
-<div style="display: flex; align-items: center; gap: 30px;">
-  <img style="width: 300px; height: auto;" alt="coding" src="/HarishHub/assets/img/Posts/programmer.gif">
-  <div>
-    <h2>👋 Hey there!</h2>
-    <p>
-      I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
-    </p>
-  </div>
+<div style="text-align:center;">
+  <a href="/HarishHub/assets/img/Posts/programmer.gif">
+    <img src="/HarishHub/assets/img/Posts/programmer.gif" alt="Team" style="display: block; margin: 0 auto;" alt="coding" width="300">
+  </a>
 </div>
 
+## 👋 Hey there!
+
+I'm someone who loves learning, creating, and exploring. From tech innovations to personal growth, I believe in staying curious and enjoying the process of discovering new things. This space is where I share my thoughts, interests, and whatever I find inspiring along the way.
 
 ### Some Fun Facts About Me:
 - 🎮 **Gaming Enthusiast**: Whether it’s exploring open-world games or solving puzzles, I love the challenge.

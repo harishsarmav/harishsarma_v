@@ -110,9 +110,9 @@ footer-link-col: "#1E90FF"
 footer-hover-col: "#1C86EE"
 
 # Navbar and footer background images
-#navbar-img: "/assets/img/bgimage.png"
-#footer-img: "/assets/img/bgimage.png"
-page-img: "/HarishHub/assets/img/pexels.jpg"
+navbar-img: "/HarishHub/assets/img/milkyway.jpg"
+footer-img: "/HarishHub/assets/img/milkyway.jpg"
+page-img: "/HarishHub/assets/img/milkyway.jpg"
 
 # Mobile theme color
 mobile-theme-col: "#0085A1"

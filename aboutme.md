@@ -7,7 +7,7 @@ share-title: Harish Sarma | About me
 
 <div style="text-align:center;">
   <a href="/HarishHub/assets/img/Posts/programmer.gif">
-    <img src="/HarishHub/assets/img/Posts/programmer.gif" alt="Team" style="display: block; margin: 0 auto;" alt="coding" width="300">
+    <img src="/HarishHub/assets/img/Posts/programmer.gif" alt="Team" style="display: block; margin: 0 auto;" alt="coding" width="400">
   </a>
 </div>
 

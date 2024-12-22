@@ -97,6 +97,36 @@ hr.small {
   border-radius: 0.1875rem;
 }
 
+/* Gallery starting*/
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery ending */
+
 /* fix in-page anchors to not be behind fixed header */
 :target:before {
   content: "";

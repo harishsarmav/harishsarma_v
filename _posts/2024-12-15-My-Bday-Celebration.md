@@ -20,6 +20,12 @@ On **December 12th**, a day before my actual birthday, our organization planned 
 
 The highlight of the lunch was something I wasn’t expecting—my **manager and team surprised me by celebrating my birthday in advance**! 🎊 It caught me completely off guard. While I felt a bit shy as they shared the news with everyone, I couldn’t help but smile and enjoy the moment. It’s those small gestures that make you feel valued, and this one truly touched me.
 
+<div style="text-align:center;">
+  <a href="/assets/img/TeamLunch.jpg">
+    <img src="/assets/img/TeamLunch.jpg" alt="Team">
+  </a>
+</div>
+
 ### **The Big Day - December 13th** 🥳
 
 On my actual birthday, I started my day on a peaceful note by visiting a **temple**. It gave me a moment of calm and gratitude as I reflected on everything I’ve been blessed with.
@@ -27,6 +33,12 @@ On my actual birthday, I started my day on a peaceful note by visiting a **templ
 Later in the day, I celebrated again with my friends. We went for **lunch at The Globe Grub Restaurant**, and the experience was fantastic. The food was delicious, and the conversations made it even more memorable.
 
 Post lunch, we decided to hit the **shopping mall**, where I received a surprise gift from one of my close friends—a brand new pair of **Puma shoes**! 👟 It was thoughtful, unexpected, and something I’ll treasure for a long time.
+
+<div style="text-align:center;">
+  <a href="/assets/img/gift.jpg">
+    <img src="/assets/img/gift.jpg" alt="Gift">
+  </a>
+</div>
 
 ### **What Made This Birthday Special?** 💖
 

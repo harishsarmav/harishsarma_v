@@ -127,7 +127,7 @@ footer-hover-col: "#1C86EE"
 # Navbar and footer background images
 navbar-img: "/assets/img/pexels.jpg"
 footer-img: "/assets/img/pexels.jpg"
-page-img: "/assets/img/pexels.jpg"
+#page-img: "/assets/img/pexels.jpg"
 
 # Mobile theme color
 mobile-theme-col: "#0085A1"

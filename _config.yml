@@ -9,7 +9,7 @@
 ############################
 
 # Name of website
-#title: harishsarma_v
+title: harishsarma_v
 
 # Your name to show in the footer
 author: Harish Sarma
@@ -43,7 +43,7 @@ future: true
 avatar: "assets/img/sblack.jpg"
 round-avatar: true
 
-title-img: "/assets/img/Icons/HS.png"
+#title-img: "/assets/img/Icons/HS.png"
 
 #####################################
 # --- Footer social media links --- #

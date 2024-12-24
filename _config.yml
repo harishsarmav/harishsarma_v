@@ -98,7 +98,8 @@ navbar-var-length: false
 # --- Colors / Background Image --#
 ##################################
 
-Personalize the colors in your website
+# Personalize the colors in your website
+
 page-col: "#F5F5F5"
 text-col: "#333333"
 link-col: "#1E90FF"

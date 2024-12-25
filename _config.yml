@@ -43,7 +43,7 @@ future: true
 avatar: "assets/img/sblack.jpg"
 round-avatar: true
 
-title-img: "/assets/img/Icons/HS.png"
+#title-img: "/assets/img/Icons/HS.png"
 
 #####################################
 # --- Footer social media links --- #
@@ -135,9 +135,9 @@ mobile-theme-col: "#0085A1"
 # Custom CSS and JS files
 site-css:
 #  - "/assets/css/custom-style.css"
-  - "/assets/css/beautifuljekylls.css"
-site-js:
-  - "/assets/js/beautifuljekyll.js"
+# - "/assets/css/beautifuljekylls.css"
+#site-js:
+#  - "/assets/js/beautifuljekyll.js"
 
 #################################
 # --- Web Analytics Section --- #

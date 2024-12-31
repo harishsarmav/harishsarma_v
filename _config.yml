@@ -100,7 +100,7 @@ navbar-var-length: false
 
 # Personalize the colors in your website
 
-page-col: "#F5F5F5"
+page-col: "#ADD8E6"
 text-col: "#333333"
 link-col: "#1E90FF"
 hover-col: "#1C86EE"

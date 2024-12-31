@@ -87,6 +87,75 @@ layout: page
 </body>
 </html> -->
 
+<canvas id="fireworks"></canvas>
+
+<div id="new-year-message">
+  <h1>🎉 A Very Happy New Year! 🎆</h1>
+</div>
+
+<script>
+  const canvas = document.getElementById("fireworks");
+  const ctx = canvas.getContext("2d");
+
+  // Full-screen canvas size
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resizeCanvas);
+  resizeCanvas();
+
+  let particles = [];
+  function Particle(x, y, color) {
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.radius = Math.random() * 2 + 1;
+    this.speedX = Math.random() * 6 - 3;
+    this.speedY = Math.random() * 6 - 3;
+    this.life = Math.random() * 30 + 30;
+  }
+  Particle.prototype.update = function () {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.life--;
+  };
+  Particle.prototype.draw = function () {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  };
+
+  function createFirework(x, y) {
+    const colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"];
+    for (let i = 0; i < 100; i++) {
+      particles.push(new Particle(x, y, colors[Math.floor(Math.random() * colors.length)]));
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles = particles.filter((p) => p.life > 0);
+    particles.forEach((p) => {
+      p.update();
+      p.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  // Trigger fireworks on click
+  canvas.addEventListener("click", (e) => {
+    createFirework(e.clientX, e.clientY);
+  });
+
+  // Auto firework every 1 second
+  setInterval(() => {
+    createFirework(Math.random() * canvas.width, Math.random() * canvas.height);
+  }, 1000);
+</script>
+
 <!-- Old content is from here-->
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 

@@ -127,7 +127,7 @@ footer-hover-col: "#81E6D9"  # Match hover
 # Navbar and footer background images
 navbar-img: "/assets/img/milkyway.jpg"
 footer-img: "/assets/img/milkyway.jpg"
-page-img: "/assets/img/milkyway.jpg"
+#page-img: "/assets/img/milkyway.jpg"
 
 # Mobile theme color
 mobile-theme-col: "#0085A1"

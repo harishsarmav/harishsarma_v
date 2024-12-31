@@ -166,9 +166,9 @@ timezone: "Asia/Kolkata"
 # Default permalink structure
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:year-:month-:day-:title/
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 
 kramdown:
   input: GFM

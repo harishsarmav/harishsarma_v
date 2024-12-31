@@ -127,7 +127,7 @@ footer-hover-col: "#1C86EE"
 # Navbar and footer background images
 navbar-img: "/assets/img/abstract-geometric.jpg"
 footer-img: "/assets/img/abstract-geometric.jpg"
-page-img: "/assets/img/abstract-geometric.jpg"
+#page-img: "/assets/img/abstract-geometric.jpg"
 
 # Mobile theme color
 mobile-theme-col: "#0085A1"

@@ -19,8 +19,8 @@ author: Harish Sarma
 ###############################################
 
 navbar-links:
-  Blog: "/"
-  About Me: "aboutme"
+  Blog: "/blog"
+  About Me: "/"
   Projects: "projects"
   Contact:
     - Instagram: "https://instagram.com/i_am_harishsarma"

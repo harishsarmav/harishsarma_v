@@ -113,23 +113,6 @@ hr.small {
   border-radius: 0.1875rem;
 }
 
-/* New year effects */
-#new-year-message {
-  animation: fadeIn 2s ease-in-out;
-  font-family: 'Lora', serif;
-  text-shadow: 0 0 10px #ff0, 0 0 20px #ff4500;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
 /* Navbar Styling */
 .navbar {
   background-color: var(--navbar-col);

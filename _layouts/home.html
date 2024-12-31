@@ -87,6 +87,43 @@ layout: page
 </body>
 </html> -->
 
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.1/dist/fireworks.min.js"></script>
+
+<script>
+  // Initialize Fireworks
+  const container = document.getElementById('fireworks-container');
+  const fireworks = new Fireworks(container, {
+    speed: 3,
+    acceleration: 1.05,
+    friction: 0.97,
+    gravity: 1.5,
+    particles: 100,
+    traceLength: 3,
+    delay: { min: 0.03, max: 0.06 },
+    explosion: { min: 5, max: 15 },
+  });
+
+  // Display "Happy New Year" message
+  const newYearMessage = document.getElementById('new-year-message');
+
+  function showNewYearMessage() {
+    newYearMessage.style.display = 'block'; // Show the message
+  }
+
+  // Start fireworks and show message after 1 second
+  window.addEventListener('load', () => {
+    fireworks.start(); // Start the fireworks
+    setTimeout(showNewYearMessage, 1000); // Show message after 1 second
+  });
+
+  // Stop fireworks after 10 seconds
+  setTimeout(() => {
+    fireworks.stop();
+  }, 10000);
+</script>
+
+
+
 <!-- Old content is from here-->
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 

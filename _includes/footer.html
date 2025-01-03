@@ -10,20 +10,7 @@
 
         <!-- Social Network Links -->
         {% include social-networks-links.html %}
-
-        <!-- Quick Links -->
-        <div class="footer-quick-links text-center mt-3">
-          <a href="/" class="footer-link">Home</a> &bull;
-          <a href="/aboutme" class="footer-link">About Me</a> &bull;
-          <a href="/projects" class="footer-link">Projects</a> &bull;
-        </div>
-
-        <!-- Copyright Notice -->
-        <p class="copyright text-muted text-center mt-3">
-          &copy; {{ site.author }} {{ site.time | date: '%Y' }} &nbsp;&bull;&nbsp;
-          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}" class="footer-link">{{ site.url-pretty }}</a>
-        </p>
-
+        
         <!-- Back to Top Button -->
         <div class="back-to-top text-center mt-3">
           <a href="#" class="footer-link">Back to Top ↑</a>

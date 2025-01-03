@@ -120,8 +120,8 @@ footer-hover-col: "#1C86EE"
 
 
 # Navbar and footer background images
-navbar-img: "/assets/img/abstract-geometric.jpg"
-footer-img: "/assets/img/abstract-geometric.jpg"
+navbar-img: "/assets/img/Backgrounds/nightsky.mp4"
+footer-img: "/assets/img/Backgrounds/nightsky.mp4"
 #page-img: "/assets/img/abstract-geometric.jpg"
 
 # Mobile theme color

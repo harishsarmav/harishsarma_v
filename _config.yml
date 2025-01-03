@@ -165,8 +165,6 @@ permalink: /blog/:title/
 paginate: 5
 paginate_path: "/page:num/"
 
-url-pretty: "📞Contact"
-
 kramdown:
   input: GFM
 

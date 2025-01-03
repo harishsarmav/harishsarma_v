@@ -603,6 +603,7 @@ footer {
   border-top: 1px var(--footer-col) solid;
   margin-top: 3.125rem;
   font-size: 1rem;
+  font-weight: 500;
   background-color: var(--footer-col);
 
   {% if site.footer-img %}

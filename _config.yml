@@ -22,12 +22,7 @@ navbar-links:
   Blog: "/"
   About Me: "aboutme"
   Projects: "projects"
-  Contact:
-    - Instagram: "https://instagram.com/i_am_harishsarma"
-    - X: "https://x.com/harishsarma_v"
-    - Reddit: "https://www.reddit.com/user/Relevant-Plantain615/"
-    - Linkedin: "https://www.linkedin.com/in/harishsarmav/"
-    - Facebook: "https://www.facebook.com/profile.php?id=61568371266647"
+  Contact: "#social-network-links"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn Markdown: "https://www.markdowntutorial.com/"
@@ -169,6 +164,8 @@ highlighter: rouge
 permalink: /blog/:title/
 paginate: 5
 paginate_path: "/page:num/"
+
+url-pretty: "📞Contact"
 
 kramdown:
   input: GFM

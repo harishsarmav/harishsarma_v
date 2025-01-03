@@ -140,14 +140,23 @@ hr.small {
 }
 
 .footer-link {
-  color: #1E90FF;
+  color: #1c3c72;
   text-decoration: none;
-  padding: 0 5px;
+  font-weight: 600;
+  position: relative;
 }
 
-.footer-link:hover {
-  color: #1C86EE;
-  text-decoration: underline;
+.footer-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff6b6b;
+  transition: width 0.3s;
+}
+
+.footer-link:hover::after {
+  width: 100%;
 }
 
 .back-to-top {

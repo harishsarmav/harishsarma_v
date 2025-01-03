@@ -1309,27 +1309,3 @@ pre {
     display: inline-block;
   }
 }
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-body.dark-mode #nav-search-input {
-  background: #333;
-  color: #e0e0e0;
-}
-
-body.dark-mode #nav-search-exit {
-  color: #e0e0e0;
-}
-
-body.dark-mode #nav-search-exit:hover {
-  color: #fff;
-}
-
-/* Transition Effects */
-body, #nav-search-input, #nav-search-exit {
-  transition: background-color 300ms ease, color 300ms ease;
-}

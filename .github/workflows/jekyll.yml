@@ -1,27 +1,20 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+# Workflow for building and deploying a Jekyll site to GitHub Pages
+name: Beautiful Jekyll CI
 
 on:
-  # Runs on pushes targeting the default branch
+  # Trigger workflow on pushes to master and pull requests
   push:
     branches: ["master"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  pull_request:
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Set permissions
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -29,30 +22,49 @@ concurrency:
 jobs:
   # Build job
   build:
+    name: Build Jekyll Site
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # Step 1: Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      # Step 2: Setup Ruby environment
       - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          ruby-version: '3.3'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          bundle install
+          bundle exec appraisal install
+
+      # Step 4: Setup Pages for deployment
       - name: Setup Pages
-        id: pages
+        id: configure-pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+
+      # Step 5: Create a CI-specific config file
+      - name: Setup CI config
+        run: |
+          echo "---" > _config_ci.yml
+          echo "baseurl: ${{ steps.configure-pages.outputs.base_path }}" >> _config_ci.yml
+
+      # Step 6: Build the Jekyll site
+      - name: Build site
         env:
           JEKYLL_ENV: production
+        run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
+
+      # Step 7: Upload the built site as an artifact
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
+    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

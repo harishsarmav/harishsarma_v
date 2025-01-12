@@ -6,7 +6,6 @@
         <!-- Contact Message -->
         <p class="footer-message text-muted text-center">
           Reach out to me via the links below! Let’s chat, collaborate, or just say hi! 👋😊
-
         </p>
 
         <!-- Social Network Links -->
@@ -23,6 +22,22 @@
           Powered by <a href="https://beautifuljekyll.com" class="footer-link">Beautiful Jekyll</a>
         </p> -->
         {% endunless %}
+
+        <!-- Author and Year Details -->
+        <p class="text-muted text-center mt-3">
+          {% if site.author %}
+            {{ site.author }}
+            &nbsp;&bull;&nbsp;
+          {% endif %}
+          {{ site.time | date: '%Y' }}
+
+          {% if site.url-pretty %}
+            &nbsp;&bull;&nbsp;
+            <span class="author-site">
+              <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
+            </span>
+          {% endif %}
+        </p>
         
       </div>
     </div>

@@ -38,7 +38,8 @@ future: true
 avatar: "assets/img/closeup.png"
 round-avatar: true
 
-title-img: "/assets/img/HS.png"
+favicon: "/assets/images/HS.png"
+#title-img: "/assets/img/HS.png"
 
 #####################################
 # --- Footer social media links --- #

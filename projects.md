@@ -25,7 +25,7 @@ Feel free to explore the repos, try out the demos, and even contribute if you fi
    - **Technology**: Jekyll, HTML/CSS, JavaScript  
    - **Overview**: A minimalist yet functional personal website that hosts my blog, project updates, and tutorials. The site uses Jekyll for content management and focuses on sharing thoughts on tech related stuff.  
    - **Status**: Live and actively maintained. Future updates are planned to enhance features and content.
-   - **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/HarishHub)  --> 🌐 [**Click here to preview**](https://harishsarmav.github.io/HarishHub/) 🚀
+   - **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/hsv)  
 
 #### Note on Simple Website
    - The "Simple Website" project is currently not under active development, but you can still view its current state.

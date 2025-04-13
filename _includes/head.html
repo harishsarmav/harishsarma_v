@@ -161,9 +161,9 @@
   <link rel="stylesheet" href="{{ "/assets/css/staticman.css" | relative_url }}">
   {% endif %}
 
-  {% assign favicon_exists = site.static_files | where: "path", "/favicon.ico" | size %}
+  {% assign favicon_exists = site.static_files | where: "path", "/HS.png" | size %}
   {% if favicon_exists == 1 %}
-  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="icon" href="{{ '/HS.png' | relative_url }}" />
   {% endif %}
 
   {% if page.head-extra %}

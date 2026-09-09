@@ -1,145 +1,203 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const nav =
-    document.getElementById("hs-nav");
-
-  const menuButton =
-    document.querySelector(".hs-menu-toggle");
-
-  const menu =
-    document.getElementById("hs-menu");
-
-  const themeButton =
-    document.querySelector(".hs-theme-toggle");
-
-  const html =
-    document.documentElement;
+  const nav = document.getElementById("hs-nav");
+  const toggle = document.querySelector(".hs-menu-toggle");
+  const menu = document.getElementById("hs-menu");
+  const theme = document.querySelector(".hs-theme-toggle");
+  const root = document.documentElement;
 
 
-  /* ==========================================
+  /* =====================================================
      THEME
-     ========================================== */
+     ===================================================== */
 
-  const savedTheme =
-    localStorage.getItem("hs-theme");
-
-  if (savedTheme === "light") {
-
-    html.classList.add("hs-light");
-
+  if (localStorage.getItem("hs-theme") === "dark") {
+    root.classList.add("hs-dark");
   }
 
+  if (theme) {
 
-  if (themeButton) {
-
-    const updateThemeIcon = () => {
-
-      themeButton.textContent =
-        html.classList.contains("hs-light")
-          ? "☾"
-          : "☀";
-
+    const updateIcon = () => {
+      theme.textContent =
+        root.classList.contains("hs-dark")
+          ? "☀"
+          : "☾";
     };
 
-    updateThemeIcon();
+    updateIcon();
 
+    theme.addEventListener("click", () => {
 
-    themeButton.addEventListener("click", () => {
-
-      html.classList.toggle("hs-light");
+      root.classList.toggle("hs-dark");
 
       localStorage.setItem(
         "hs-theme",
-        html.classList.contains("hs-light")
-          ? "light"
-          : "dark"
+        root.classList.contains("hs-dark")
+          ? "dark"
+          : "light"
       );
 
-      updateThemeIcon();
-
+      updateIcon();
     });
-
   }
 
 
-  /* ==========================================
+  /* =====================================================
      MOBILE MENU
-     ========================================== */
+     ===================================================== */
 
-  if (menuButton && menu) {
+  if (toggle && menu) {
 
-    menuButton.addEventListener("click", () => {
+    toggle.addEventListener("click", () => {
 
-      const open =
-        menu.classList.toggle("open");
+      const open = menu.classList.toggle("open");
 
-      menuButton.setAttribute(
+      toggle.setAttribute(
         "aria-expanded",
         open ? "true" : "false"
       );
+    });
+
+
+    menu.querySelectorAll("a").forEach(link => {
+
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+      });
+
+    });
+  }
+
+
+  /* =====================================================
+     NAV SCROLL EFFECT
+     ===================================================== */
+
+  const updateNav = () => {
+
+    if (!nav) return;
+
+    nav.classList.toggle(
+      "scrolled",
+      window.scrollY > 20
+    );
+  };
+
+  window.addEventListener(
+    "scroll",
+    updateNav,
+    { passive: true }
+  );
+
+  updateNav();
+
+
+  /* =====================================================
+     MOUSE SPOTLIGHT
+     ===================================================== */
+
+  let mouseX = 50;
+  let mouseY = 30;
+
+  document.addEventListener("mousemove", (event) => {
+
+    mouseX =
+      (event.clientX / window.innerWidth) * 100;
+
+    mouseY =
+      (event.clientY / window.innerHeight) * 100;
+
+    document.documentElement.style.setProperty(
+      "--mouse-x",
+      mouseX + "%"
+    );
+
+    document.documentElement.style.setProperty(
+      "--mouse-y",
+      mouseY + "%"
+    );
+
+  });
+
+
+  /* =====================================================
+     CARD TILT
+     ===================================================== */
+
+  const cards = document.querySelectorAll(
+    ".hs-current-card, .hs-project-card"
+  );
+
+  cards.forEach(card => {
+
+    card.addEventListener("mousemove", event => {
+
+      if (window.innerWidth < 900) return;
+
+      const rect =
+        card.getBoundingClientRect();
+
+      const x =
+        event.clientX - rect.left;
+
+      const y =
+        event.clientY - rect.top;
+
+      const centerX =
+        rect.width / 2;
+
+      const centerY =
+        rect.height / 2;
+
+      const rotateX =
+        ((y - centerY) / centerY) * -3;
+
+      const rotateY =
+        ((x - centerX) / centerX) * 3;
+
+      card.style.transform =
+        `perspective(900px)
+         rotateX(${rotateX}deg)
+         rotateY(${rotateY}deg)
+         translateY(-5px)`;
 
     });
 
 
-    menu.querySelectorAll("a")
-      .forEach(link => {
+    card.addEventListener("mouseleave", () => {
 
-        link.addEventListener("click", () => {
+      card.style.transform = "";
 
-          menu.classList.remove("open");
+    });
 
-        });
-
-      });
-
-  }
+  });
 
 
-  /* ==========================================
-     NAV SCROLL
-     ========================================== */
-
-  window.addEventListener(
-    "scroll",
-    () => {
-
-      if (!nav) return;
-
-      nav.classList.toggle(
-        "scrolled",
-        window.scrollY > 15
-      );
-
-    },
-    { passive: true }
-  );
-
-
-  /* ==========================================
-     SCROLL REVEAL
-     ========================================== */
+  /* =====================================================
+     REVEAL SECTIONS
+     ===================================================== */
 
   const revealElements =
-    document.querySelectorAll(".reveal");
+    document.querySelectorAll(
+      ".hs-section-heading, .hs-current-card, .hs-project-card, .hs-note, .hs-cta"
+    );
 
 
-  const revealObserver =
+  const observer =
     new IntersectionObserver(
-      (entries) => {
+      entries => {
 
         entries.forEach(entry => {
 
-          if (entry.isIntersecting) {
+          if (!entry.isIntersecting) return;
 
-            entry.target.classList.add(
-              "visible"
-            );
+          entry.target.classList.add(
+            "hs-visible"
+          );
 
-            revealObserver.unobserve(
-              entry.target
-            );
-
-          }
+          observer.unobserve(
+            entry.target
+          );
 
         });
 
@@ -151,65 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   revealElements.forEach(element => {
-
-    revealObserver.observe(element);
-
-  });
-
-
-  /* ==========================================
-     CARD MOUSE EFFECT
-     ========================================== */
-
-  const cards =
-    document.querySelectorAll(
-      ".creative-card, .project-card"
-    );
-
-
-  cards.forEach(card => {
-
-    card.addEventListener(
-      "mousemove",
-      (event) => {
-
-        if (window.innerWidth < 900)
-          return;
-
-        const rect =
-          card.getBoundingClientRect();
-
-        const x =
-          event.clientX - rect.left;
-
-        const y =
-          event.clientY - rect.top;
-
-        const rotateX =
-          ((y / rect.height) - .5) * -4;
-
-        const rotateY =
-          ((x / rect.width) - .5) * 4;
-
-        card.style.transform =
-          `perspective(700px)
-           rotateX(${rotateX}deg)
-           rotateY(${rotateY}deg)
-           translateY(-5px)`;
-
-      }
-    );
-
-
-    card.addEventListener(
-      "mouseleave",
-      () => {
-
-        card.style.transform = "";
-
-      }
-    );
-
+    observer.observe(element);
   });
 
 });

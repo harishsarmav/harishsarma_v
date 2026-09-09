@@ -116,6 +116,7 @@
   // Moments slider: autoplay, dots, keyboard, hover pause and touch swipe.
   const slider = document.querySelector('[data-slider]');
   if (slider) {
+    const track = slider.querySelector('.moments-track');
     const slides = [...slider.querySelectorAll('.moment-slide')];
     const dots = [...slider.querySelectorAll('.slider-dot')];
     const progressBar = slider.querySelector('.slider-progress span');
@@ -129,6 +130,7 @@
 
     const showSlide = (index, restart = true) => {
       current = (index + slides.length) % slides.length;
+      if (track) track.style.transform = `translate3d(${-current * 100}%, 0, 0)`;
       slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
       dots.forEach((dot, i) => {
         const active = i === current;

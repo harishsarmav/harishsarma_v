@@ -1,21 +1,73 @@
 <nav class="hs-nav" id="hs-nav">
+
   <div class="hs-nav-inner">
-    <a class="hs-brand" href="{{ '/' | relative_url }}" aria-label="Harish Sarma home">
-      <span class="hs-brand-mark">HS</span>
-      <span>Harish Sarma</span>
+
+    <a
+      class="hs-brand"
+      href="{{ '/' | relative_url }}">
+
+      <span class="hs-brand-mark">
+        HS
+      </span>
+
+      <span>
+        Harish Sarma
+      </span>
+
     </a>
 
-    <button class="hs-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="hs-menu">
-      <span></span><span></span>
+
+    <button
+      class="hs-menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+
     </button>
 
-    <div class="hs-menu" id="hs-menu">
-      <a href="{{ '/aboutme/' | relative_url }}">About</a>
-      <a href="{{ '/projects/' | relative_url }}">Work</a>
-      <a href="{{ '/' | relative_url }}#notes">Notes</a>
-      <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
-      <a href="{{ '/' | relative_url }}#social-network-links">Contact</a>
-      <button class="hs-theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">☾</button>
+
+    <div
+      class="hs-menu"
+      id="hs-menu">
+
+      <a href="{{ '/' | relative_url }}">
+        Home
+      </a>
+
+      <a href="{{ '/aboutme/' | relative_url }}">
+        About
+      </a>
+
+      <a href="{{ '/projects/' | relative_url }}">
+        Work
+      </a>
+
+      <a href="{{ '/' | relative_url }}#notes">
+        Notes
+      </a>
+
+      <a href="{{ '/gallery/' | relative_url }}">
+        Gallery
+      </a>
+
+      <a href="{{ '/' | relative_url }}#social-network-links">
+        Contact
+      </a>
+
+      <button
+        class="hs-theme-toggle"
+        type="button"
+        aria-label="Toggle theme">
+
+        ☀
+
+      </button>
+
     </div>
+
   </div>
+
 </nav>

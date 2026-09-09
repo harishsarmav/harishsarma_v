@@ -6,112 +6,524 @@ share-description: Software engineer, builder and curious human exploring C++, A
 share-img: "assets/img/HS.png"
 ---
 
-<main class="hs-home">
+<main class="creative-home">
 
-  <section class="hs-hero hs-container">
-    <div class="hs-hero-copy">
-      <p class="hs-eyebrow"><span class="hs-dot"></span> Software Engineer · Builder · Explorer</p>
-      <h1>Hi, I'm <span>Harish.</span> 👋</h1>
-      <p class="hs-lead">I build software, explore AI, automate the boring stuff, and write about the things I'm learning along the way.</p>
-      <div class="hs-actions">
-        <a class="hs-btn hs-btn-primary" href="{{ '/projects/' | relative_url }}">Explore my work <span>→</span></a>
-        <a class="hs-btn hs-btn-secondary" href="{{ '/aboutme/' | relative_url }}">Get to know me</a>
+  <!-- Animated background -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-purple"></div>
+    <div class="ambient-orb orb-blue"></div>
+    <div class="ambient-orb orb-cyan"></div>
+  </div>
+
+  <!-- HERO -->
+  <section class="creative-hero">
+    <div class="hero-grid"></div>
+
+    <div class="creative-container hero-content reveal">
+
+      <div class="availability">
+        <span class="availability-dot"></span>
+        Exploring what's next
       </div>
-      <div class="hs-quick-tags" aria-label="Areas of interest">
-        <span>C++</span><span>AI / ML</span><span>Automation</span><span>Software</span>
+
+      <h1>
+        Hi, I'm
+        <span class="gradient-text">Harish.</span>
+        <span class="wave">👋</span>
+      </h1>
+
+      <p class="hero-role">
+        Software Engineer <span>·</span> Builder <span>·</span> Explorer
+      </p>
+
+      <p class="hero-description">
+        I build software, explore AI, automate the boring stuff,
+        and write about the things I'm learning along the way.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="{{ '/projects/' | relative_url }}"
+           class="creative-btn primary-btn">
+          <span>Explore my work</span>
+          <span class="btn-arrow">↗</span>
+        </a>
+
+        <a href="{{ '/aboutme/' | relative_url }}"
+           class="creative-btn glass-btn">
+          Get to know me
+        </a>
+
       </div>
-    </div>
 
-    <div class="hs-hero-card">
-      <div class="hs-card-glow"></div>
-      <div class="hs-avatar-wrap">
-        <img src="{{ 'assets/img/closeup.png' | relative_url }}" alt="Harish Sarma">
+      <div class="tech-cloud">
+
+        <span>⚡ C++</span>
+        <span>🤖 AI / ML</span>
+        <span>⚙️ Automation</span>
+        <span>💻 Software</span>
+        <span>🐍 Python</span>
+
       </div>
-      <p class="hs-card-label">CURRENTLY</p>
-      <h2>Curious about what’s next.</h2>
-      <p>Learning, building, experimenting — one idea at a time.</p>
-      <div class="hs-card-line"></div>
-      <span class="hs-location">📍 India</span>
+
     </div>
+
+    <!-- Floating profile card -->
+    <div class="floating-profile">
+
+      <div class="profile-glow"></div>
+
+      <div class="profile-image">
+        <img
+          src="{{ 'assets/img/closeup.png' | relative_url }}"
+          alt="Harish Sarma">
+      </div>
+
+      <div class="profile-info">
+
+        <span class="profile-label">CURRENTLY</span>
+
+        <h3>Building things<br>worth exploring.</h3>
+
+        <p>
+          Learning · Experimenting · Creating
+        </p>
+
+      </div>
+
+      <div class="profile-location">
+        <span>📍</span>
+        India
+      </div>
+
+    </div>
+
   </section>
 
-  <section class="hs-section hs-container" id="currently">
-    <div class="hs-section-heading">
-      <p class="hs-kicker">RIGHT NOW</p>
-      <h2>Currently</h2>
-      <p>A snapshot of what has my attention lately.</p>
+
+  <!-- CURRENTLY -->
+
+  <section class="creative-section" id="currently">
+
+    <div class="creative-container">
+
+      <div class="section-intro reveal">
+
+        <span class="section-number">01</span>
+
+        <div>
+          <span class="section-label">RIGHT NOW</span>
+
+          <h2>
+            What's keeping me
+            <span class="gradient-text">curious.</span>
+          </h2>
+
+          <p>
+            A small snapshot of what has my attention lately.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="currently-grid">
+
+        <article class="creative-card reveal">
+
+          <div class="card-icon purple">💻</div>
+
+          <span class="card-number">01</span>
+
+          <h3>Building</h3>
+
+          <p>
+            Software projects and little tools
+            that solve real problems.
+          </p>
+
+          <div class="card-line"></div>
+
+        </article>
+
+
+        <article class="creative-card reveal">
+
+          <div class="card-icon blue">🤖</div>
+
+          <span class="card-number">02</span>
+
+          <h3>Exploring</h3>
+
+          <p>
+            AI, machine learning and practical
+            ways to put them to work.
+          </p>
+
+          <div class="card-line"></div>
+
+        </article>
+
+
+        <article class="creative-card reveal">
+
+          <div class="card-icon cyan">📚</div>
+
+          <span class="card-number">03</span>
+
+          <h3>Learning</h3>
+
+          <p>
+            C++, Python and better ways
+            to design and ship software.
+          </p>
+
+          <div class="card-line"></div>
+
+        </article>
+
+
+        <article class="creative-card reveal">
+
+          <div class="card-icon pink">🎮</div>
+
+          <span class="card-number">04</span>
+
+          <h3>Enjoying</h3>
+
+          <p>
+            Games, movies, exploring places
+            and discovering new things.
+          </p>
+
+          <div class="card-line"></div>
+
+        </article>
+
+      </div>
+
     </div>
-    <div class="hs-current-grid">
-      <article class="hs-current-card"><span class="hs-icon">💻</span><h3>Building</h3><p>Software projects and little tools that solve real problems.</p></article>
-      <article class="hs-current-card"><span class="hs-icon">🤖</span><h3>Exploring</h3><p>AI, machine learning and practical ways to put them to work.</p></article>
-      <article class="hs-current-card"><span class="hs-icon">📚</span><h3>Learning</h3><p>C++, Python and better ways to design and ship software.</p></article>
-      <article class="hs-current-card"><span class="hs-icon">🎮</span><h3>Enjoying</h3><p>Games, movies, exploring new places and discovering new things.</p></article>
-    </div>
+
   </section>
 
-  <section class="hs-section hs-container" id="work">
-    <div class="hs-section-heading hs-heading-row">
-      <div><p class="hs-kicker">THINGS I'VE BUILT</p><h2>Featured work</h2><p>Projects where curiosity turned into something tangible.</p></div>
-      <a class="hs-text-link" href="{{ '/projects/' | relative_url }}">View all work →</a>
+
+  <!-- PROJECTS -->
+
+  <section class="creative-section projects-section" id="work">
+
+    <div class="creative-container">
+
+      <div class="section-intro reveal">
+
+        <span class="section-number">02</span>
+
+        <div>
+
+          <span class="section-label">THINGS I'VE BUILT</span>
+
+          <h2>
+            From ideas to
+            <span class="gradient-text">reality.</span>
+          </h2>
+
+          <p>
+            Projects where curiosity turned into something tangible.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <article class="project-card project-featured reveal">
+
+          <div class="project-glow"></div>
+
+          <div class="project-top">
+
+            <span class="project-index">01</span>
+
+            <span class="project-status">
+              ● Active
+            </span>
+
+          </div>
+
+          <div class="project-icon">
+            🤖
+          </div>
+
+          <h3>AI Code Reviewer</h3>
+
+          <p>
+            An AI-powered GitHub tool that reviews pull requests
+            and provides useful code-quality feedback.
+          </p>
+
+          <div class="project-tech">
+
+            <span>Python</span>
+            <span>OpenAI API</span>
+            <span>GitHub API</span>
+
+          </div>
+
+          <a
+            href="https://github.com/harishsarmav/AI_Code_Review"
+            target="_blank"
+            rel="noopener"
+            class="project-link">
+
+            Explore project
+            <span>↗</span>
+
+          </a>
+
+        </article>
+
+
+        <article class="project-card reveal">
+
+          <div class="project-top">
+
+            <span class="project-index">02</span>
+
+            <span class="project-status">
+              Personal
+            </span>
+
+          </div>
+
+          <div class="project-icon">
+            🌐
+          </div>
+
+          <h3>This website</h3>
+
+          <p>
+            My personal corner of the internet for projects,
+            experiments, writing and everything I'm curious about.
+          </p>
+
+          <div class="project-tech">
+
+            <span>Jekyll</span>
+            <span>HTML</span>
+            <span>CSS</span>
+
+          </div>
+
+          <a
+            href="{{ '/aboutme/' | relative_url }}"
+            class="project-link">
+
+            Explore the story
+            <span>→</span>
+
+          </a>
+
+        </article>
+
+      </div>
+
     </div>
-    <div class="hs-project-grid">
-      <article class="hs-project-card hs-project-featured">
-        <div class="hs-project-top"><span class="hs-project-number">01</span><span class="hs-status">Active project</span></div>
-        <div class="hs-project-emoji">🤖</div>
-        <h3>AI Code Reviewer</h3>
-        <p>An AI-powered GitHub tool that reviews pull requests and provides useful code-quality feedback.</p>
-        <div class="hs-tech"><span>Python</span><span>OpenAI API</span><span>GitHub API</span></div>
-        <a href="https://github.com/harishsarmav/AI_Code_Review" target="_blank" rel="noopener">Explore project ↗</a>
-      </article>
-      <article class="hs-project-card">
-        <div class="hs-project-top"><span class="hs-project-number">02</span><span class="hs-status">Personal</span></div>
-        <div class="hs-project-emoji">🌐</div>
-        <h3>This website</h3>
-        <p>A personal space for my work, experiments, writing, interests and the things I want to remember.</p>
-        <div class="hs-tech"><span>Jekyll</span><span>HTML / CSS</span><span>JavaScript</span></div>
-        <a href="{{ '/aboutme/' | relative_url }}">Explore the story →</a>
-      </article>
-    </div>
+
   </section>
 
-  <section class="hs-section hs-container hs-interests" id="interests">
-    <div class="hs-section-heading">
-      <p class="hs-kicker">BEYOND THE JOB TITLE</p>
-      <h2>What I'm into</h2>
-      <p>Because a portfolio should tell you a little about the person, too.</p>
+
+  <!-- INTERESTS -->
+
+  <section class="creative-section interests-section" id="interests">
+
+    <div class="creative-container">
+
+      <div class="section-intro reveal">
+
+        <span class="section-number">03</span>
+
+        <div>
+
+          <span class="section-label">BEYOND THE JOB TITLE</span>
+
+          <h2>
+            Things I
+            <span class="gradient-text">love exploring.</span>
+          </h2>
+
+          <p>
+            Because a portfolio should tell you something about
+            the person behind the code.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="interest-list">
+
+        <div class="interest-item reveal">
+
+          <span>01</span>
+
+          <div>
+            <h3>🧠 Technology</h3>
+            <p>C++, AI, ML, developer tools and clever software.</p>
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+
+        <div class="interest-item reveal">
+
+          <span>02</span>
+
+          <div>
+            <h3>⚙️ Automation</h3>
+            <p>Turning repetitive tasks into one-click workflows.</p>
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+
+        <div class="interest-item reveal">
+
+          <span>03</span>
+
+          <div>
+            <h3>🎬 Entertainment</h3>
+            <p>Movies, games and stories worth getting lost in.</p>
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+
+        <div class="interest-item reveal">
+
+          <span>04</span>
+
+          <div>
+            <h3>🌍 Exploration</h3>
+            <p>New places, new ideas and anything that sparks curiosity.</p>
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+      </div>
+
     </div>
-    <div class="hs-interest-grid">
-      <div><strong>01</strong><h3>🧠 Technology</h3><p>C++, AI, ML, developer tools and clever software.</p></div>
-      <div><strong>02</strong><h3>⚙️ Automation</h3><p>Turning repetitive tasks into one-click workflows.</p></div>
-      <div><strong>03</strong><h3>🎬 Entertainment</h3><p>Movies, games and stories that are worth getting lost in.</p></div>
-      <div><strong>04</strong><h3>🌍 Exploration</h3><p>New places, new ideas and anything that sparks curiosity.</p></div>
-    </div>
+
   </section>
 
-  <section class="hs-section hs-container" id="notes">
-    <div class="hs-section-heading hs-heading-row">
-      <div><p class="hs-kicker">FROM MY NOTEBOOK</p><h2>Recent notes</h2><p>Things I've learned, thought about or simply found interesting.</p></div>
-      <a class="hs-text-link" href="{{ '/' | relative_url }}">Read all notes →</a>
+
+  <!-- NOTES -->
+
+  <section class="creative-section notes-section" id="notes">
+
+    <div class="creative-container">
+
+      <div class="section-intro reveal">
+
+        <span class="section-number">04</span>
+
+        <div>
+
+          <span class="section-label">FROM MY NOTEBOOK</span>
+
+          <h2>
+            Things I've been
+            <span class="gradient-text">thinking about.</span>
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="notes-list">
+
+        {% assign recent_posts = site.posts | slice: 0, 4 %}
+
+        {% for post in recent_posts %}
+
+        <a
+          class="note-item reveal"
+          href="{{ post.url | relative_url }}">
+
+          <span class="note-date">
+            {{ post.date | date: "%b %Y" }}
+          </span>
+
+          <span class="note-title">
+            {{ post.title }}
+          </span>
+
+          <span class="note-arrow">
+            ↗
+          </span>
+
+        </a>
+
+        {% endfor %}
+
+      </div>
+
     </div>
-    <div class="hs-notes-list">
-      {% assign recent_posts = site.posts | slice: 0, 3 %}
-      {% for post in recent_posts %}
-      <a class="hs-note" href="{{ post.url | relative_url }}">
-        <span class="hs-note-date">{{ post.date | date: "%b %Y" }}</span>
-        <span class="hs-note-title">{{ post.title }}</span>
-        <span class="hs-note-arrow">↗</span>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="creative-container">
+
+    <div class="creative-cta reveal">
+
+      <div class="cta-glow"></div>
+
+      <div>
+
+        <span class="section-label">
+          ONE LAST THING
+        </span>
+
+        <h2>
+          Stay curious.
+          <span class="gradient-text">
+            Keep building.
+          </span>
+        </h2>
+
+        <p>
+          If something here catches your attention,
+          come say hi.
+        </p>
+
+      </div>
+
+      <a
+        href="#social-network-links"
+        class="creative-btn primary-btn">
+
+        Let's connect
+        <span>↗</span>
+
       </a>
-      {% endfor %}
-    </div>
-  </section>
 
-  <section class="hs-cta hs-container">
-    <div>
-      <p class="hs-kicker">ONE LAST THING</p>
-      <h2>Stay curious. Keep building.</h2>
-      <p>If something here catches your attention, come say hi.</p>
     </div>
-    <a class="hs-btn hs-btn-primary" href="#social-network-links">Let's connect <span>→</span></a>
+
   </section>
 
 </main>

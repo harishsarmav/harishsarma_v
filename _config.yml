@@ -19,11 +19,12 @@ author: Harish Sarma
 ###############################################
 
 navbar-links:
+  Home: "/"
   About: "/aboutme/"
   Work: "/projects/"
-  Notes: "/"
+  Notes: "/#notes"
   Gallery: "/gallery/"
-  Contact: "#social-network-links"
+  Contact: "/#social-network-links"
 
 future: true
 

@@ -105,12 +105,101 @@
   commandInput?.addEventListener('input', e => { commandIndex=0; renderCommands(e.target.value); });
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); openCommands(); }
-    if (e.key === 'Escape') { closeCommands(); closeModal(); }
+    if (e.key === 'Escape') { closeCommands(); closeModal(); closeLightbox(); }
   });
 
   const time = document.getElementById('localTime');
   const tick = () => { if (time) time.textContent = new Intl.DateTimeFormat('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date()); };
   tick(); setInterval(tick, 30000);
+
+
+  // Moments slider: autoplay, dots, keyboard, hover pause and touch swipe.
+  const slider = document.querySelector('[data-slider]');
+  if (slider) {
+    const slides = [...slider.querySelectorAll('.moment-slide')];
+    const dots = [...slider.querySelectorAll('.slider-dot')];
+    const progressBar = slider.querySelector('.slider-progress span');
+    const prev = slider.querySelector('[data-slider-prev]');
+    const next = slider.querySelector('[data-slider-next]');
+    let current = 0;
+    let timer = null;
+    let progressTimer = null;
+    let touchStartX = 0;
+    const interval = 5600;
+
+    const showSlide = (index, restart = true) => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+      dots.forEach((dot, i) => {
+        const active = i === current;
+        dot.classList.toggle('active', active);
+        dot.setAttribute('aria-selected', String(active));
+      });
+      if (restart) startTimer();
+    };
+
+    const animateProgress = () => {
+      if (!progressBar) return;
+      progressBar.style.transition = 'none';
+      progressBar.style.width = '0%';
+      requestAnimationFrame(() => {
+        progressBar.style.transition = `width ${interval}ms linear`;
+        progressBar.style.width = '100%';
+      });
+    };
+
+    const startTimer = () => {
+      clearTimeout(timer);
+      clearTimeout(progressTimer);
+      animateProgress();
+      timer = setTimeout(() => showSlide(current + 1, false), interval);
+    };
+
+    prev?.addEventListener('click', () => showSlide(current - 1));
+    next?.addEventListener('click', () => showSlide(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => showSlide(i)));
+
+    slider.addEventListener('mouseenter', () => {
+      clearTimeout(timer);
+      clearTimeout(progressTimer);
+      if (progressBar) progressBar.style.width = getComputedStyle(progressBar).width;
+    });
+    slider.addEventListener('mouseleave', () => startTimer());
+
+    slider.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    slider.addEventListener('touchend', e => {
+      const delta = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(delta) > 45) showSlide(current + (delta < 0 ? 1 : -1));
+    }, { passive: true });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') showSlide(current - 1);
+      if (e.key === 'ArrowRight') showSlide(current + 1);
+    });
+
+    showSlide(0, false);
+    startTimer();
+  }
+
+  // Fullscreen photo viewer for moments.
+  const lightbox = document.getElementById('photoLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeLightbox = () => {
+    lightbox?.classList.remove('open');
+    lightbox?.setAttribute('aria-hidden', 'true');
+    body.style.overflow = '';
+  };
+  document.querySelectorAll('[data-lightbox]').forEach(button => {
+    button.addEventListener('click', () => {
+      if (!lightbox || !lightboxImage) return;
+      lightboxImage.src = button.dataset.lightbox;
+      lightboxImage.alt = button.querySelector('img')?.alt || 'Moment';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      body.style.overflow = 'hidden';
+    });
+  });
+  lightbox?.querySelectorAll('[data-lightbox-close]').forEach(el => el.addEventListener('click', closeLightbox));
 
   document.querySelectorAll('.filter-button').forEach(button => {
     button.addEventListener('click', () => {

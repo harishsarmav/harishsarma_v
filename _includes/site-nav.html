@@ -1,0 +1,31 @@
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner shell">
+    <a class="brand magnetic" href="{{ '/' | relative_url }}" aria-label="Harish Sarma home">
+      <span class="brand-mark">HS</span>
+      <span class="brand-name">Harish Sarma</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}#about">About</a>
+      <a href="{{ '/' | relative_url }}#work">Work</a>
+      <a href="{{ '/notes/' | relative_url }}">Notes</a>
+      <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+      <a href="{{ '/' | relative_url }}#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-button magnetic" id="commandButton" type="button" aria-label="Open command palette" title="Command palette">⌘K</button>
+      <button class="icon-button magnetic" id="themeButton" type="button" aria-label="Toggle theme" title="Toggle theme">☼</button>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="{{ '/' | relative_url }}#about">About</a>
+    <a href="{{ '/' | relative_url }}#work">Work</a>
+    <a href="{{ '/notes/' | relative_url }}">Notes</a>
+    <a href="{{ '/gallery/' | relative_url }}">Gallery</a>
+    <a href="{{ '/' | relative_url }}#contact">Contact</a>
+  </div>
+</header>

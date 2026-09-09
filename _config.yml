@@ -1,214 +1,45 @@
-###########################################################
-### Welcome to Beautiful Jekyll!                         #
-### This config file is meant for settings that affect   #
-### your entire website.                                  #
-###########################################################
-
-############################
-# --- Required options --- #
-############################
-
-# Name of website
 title: Harish Sarma
-
-# Your name to show in the footer
 author: Harish Sarma
-
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
-navbar-links:
-  Home: "/"
-  About: "/aboutme/"
-  Work: "/projects/"
-  Notes: "/#notes"
-  Gallery: "/gallery/"
-  Contact: "/#social-network-links"
-
+description: Software engineer, builder, automation maker and curious explorer.
+url: "https://harishsarmav.github.io"
+baseurl: "/harishsarma_v"
+lang: en-IN
+timezone: Asia/Kolkata
 future: true
-
-################
-# --- Logo --- #
-################
-
-# Avatar image for the navigation bar
-avatar: "assets/img/closeup.png"
-round-avatar: true
-
-favicon: "/assets/images/HS.png"
-#title-img: "/assets/img/HS.png"
-
-#####################################
-# --- Footer social media links --- #
-#####################################
-
-social-network-links:
-  email: "harishsarma.v@gmail.com"
-  github: harishsarmav
-  twitter: harishsarma_v
-  reddit: Relevant-Plantain615
-  linkedin: harishsarmav
-  instagram: the.harish.way
-  facebook: harishsarmavelavalapalli
-
-###########################
-# --- General options --- #
-###########################
-
-# Select which social network share links to show in posts
-# share-links-active:
-#   twitter: true
-#   facebook: true
-#   linkedin: true
-#   whatsapp: true
-
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
-#url-pretty: "harishsarmav.github.io"
-# Add the website title to the title of every page
-title-on-all-pages: true
-# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
-# Excerpt settings
-excerpt_length: 50
-feed_show_excerpt: false
-feed_show_tags: false
-
-# Add a search button to the navbar
-post_search: true
-
-# Add a button in the footer to edit the current page
-edit_page_button: true
-
-# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
-# If this setting is off, then long sub-menu words might get cut off
-# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
-navbar-var-length: false
-# The keywords to associate with your website, for SEO purposes
-# Keywords for SEO
-#keywords: "Harish Sarma, software engineer, C++, AI, machine learning, automation"
-
-##################################
-# --- Colors / Background Image --#
-##################################
-
-# Personalize the colors in your website
-
-page-col: "#ADD8E6"
-text-col: "#333333"
-link-col: "#1E90FF"
-hover-col: "#1C86EE"
-navbar-col: "#FFFFFF"
-navbar-text-col: "#333333"
-navbar-border-col: "#DDDDDD"
-footer-col: "#F5F5F5"
-footer-text-col: "#666666"
-footer-link-col: "#1E90FF"
-footer-hover-col: "#1C86EE"
-
-# page-col: "#000022"  # Deep space blue
-# text-col: "#EAEAEA"  # Light gray for text
-# link-col: "#4FD1C5"  # Turquoise for links
-# hover-col: "#81E6D9" # Lighter turquoise for hover
-# navbar-col: "rgba(0, 0, 0, 0.8)"  # Semi-transparent black
-# navbar-text-col: "#FFFFFF"  # White for navbar text
-# footer-col: "#000022"  # Match page background
-# footer-text-col: "#B0B0B0"  # Subtle gray for footer text
-# footer-link-col: "#4FD1C5"  # Match links
-# footer-hover-col: "#81E6D9"  # Match hover
-
-
-# Navbar and footer background images
-navbar-img: "/assets/img/abstract-geometric.jpg"
-footer-img: "/assets/img/abstract-geometric.jpg"
-#page-img: "/assets/img/abstract-geometric.jpg"
-
-# Mobile theme color
-mobile-theme-col: "#111827"
-
-# Custom CSS and JS files
-site-css:
-  - "/assets/css/site-redesign.css"
-site-js:
-  - "/assets/js/site-redesign.js"
-# - "/assets/css/beautifuljekylls.css"
-#site-js:
-#  - "/assets/js/beautifuljekyll.js"
-
-#################################
-# --- Web Analytics Section --- #
-#################################
-
-# Google Analytics or other tracking settings
-#gtag: "G-XXXXXXXXXX"
-
-####################
-# --- Comments --- #
-####################
-
-# Disqus settings for comments
-disqus: "https-harishsarma-v"
-
-################
-# --- Misc --- #
-################
-
-# Ruby Date Format for post dates
+permalink: /blog/:title/
 date_format: "%B %-d, %Y"
-
-# Timezone setting
-timezone: "Asia/Kolkata"
-
-# Default permalink structure
 markdown: kramdown
 highlighter: rouge
-permalink: /blog/:title/
-paginate: 5
-paginate_path: "/page:num/"
-
 kramdown:
   input: GFM
 
-# Default YAML values
-collections:
-  posts:
-    output: true
+social:
+  email: harishsarma.v@gmail.com
+  github: https://github.com/harishsarmav
+  linkedin: https://www.linkedin.com/in/harishsarmav/
+  instagram: https://www.instagram.com/the.harish.way/
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "default"
-      comments: true
-      social-share: true
-      show-subscribe: true
-      show-share: true
-      
-  -
-    scope:
-      path: "pages"
+      layout: post
+      comments: false
+      social-share: false
+  - scope:
+      path: ""
     values:
-      layout: "page"
+      layout: default
 
-  -
-    scope:
-      path: ""
-    values:
-      layout: "page"
-# Excluded files from production site
 exclude:
+  - node_modules
+  - vendor
+  - .bundle
+  - tmp
+  - Appraisals
+  - README.md
   - CHANGELOG.md
-  - CNAME
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
-
-# Jekyll plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap

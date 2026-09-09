@@ -1,44 +1,24 @@
 ---
+layout: default
 title: Projects
-share-title: Harish Sarma | Projects
 permalink: /projects/
-subtitle: Explore My Personal Projects
+description: Selected projects, experiments and personal tools by Harish Sarma.
 ---
 
-Welcome to my projects page! Here, I showcase some of the personal projects I’ve been working on, Each project represents a step forward in my journey as a developer, where I’m constantly learning, experimenting, and challenging myself to push boundaries in technology. 
+<section class="page-hero shell">
+  <div class="reveal"><p class="eyebrow">PROJECTS · 02</p><h1>Things I've <span class="gradient-text">built.</span></h1><p class="page-deck">A growing archive of practical tools, experiments and ideas that made it out of my head and into the real world.</p></div>
+</section>
 
-Feel free to explore the repos, try out the demos, and even contribute if you find something interesting. Let’s build something amazing together!
-
-## 💻 Featured Projects
-
-### 1. **AI Code Reviewer**
-   **_An AI-powered GitHub tool for automated code reviews_**  
-   - **Technology**: Python, OpenAI API, GitHub API  
-   - **Overview**: This AI-driven tool reviews GitHub pull requests automatically, providing feedback and improvement suggestions to boost code quality. It integrates with GitHub, triggering whenever a pull request is submitted, and comments with relevant feedback.  
-   - **Status**: Deployed and under testing.  
-   - **GitHub Repo**: [AI Code Reviewer](https://github.com/harishsarmav/AI_Code_Review)
-
----
-
-### 2. **Personal Website**
-   **_A personal portfolio website built using Jekyll and GitHub Pages_**  
-   - **Technology**: Jekyll, HTML/CSS, JavaScript  
-   - **Overview**: A minimalist yet functional personal website that hosts my blog, project updates, and tutorials. The site uses Jekyll for content management and focuses on sharing thoughts on tech related stuff.  
-   - **Status**: Live and actively maintained. Future updates are planned to enhance features and content.
-   - **GitHub Repo**: [Personal Website](https://github.com/harishsarmav/hsv)  
-
-#### Note on Simple Website
-   - The "Simple Website" project is currently not under active development, but you can still view its current state.
-   - **GitHub Repo**: [Simple Website](https://github.com/harishsarmav/hsv)  --> 🌐 [**Click here to preview**](https://harishsarmav.github.io/hsv/) 🚀 
-
----
-
-## 📅 Upcoming Projects
-
-While new projects are always in the works, I’d love to hear from you! Feel free to reach out if you have a cool project idea or would like to collaborate. Whether it's a unique tech challenge or an interesting collaboration, let me know! 😉
-
-Stay tuned—there’s always something exciting coming up around the corner!
-
----
-
-Thank you for exploring my projects! Contributions and feedback are always welcome. Check out the GitHub repos for more details.
+<section class="section shell">
+  <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+    <button class="filter-button active" data-filter="all">All</button><button class="filter-button" data-filter="ai">AI</button><button class="filter-button" data-filter="automation">Automation</button><button class="filter-button" data-filter="web">Web</button><button class="filter-button" data-filter="experiments">Experiments</button>
+  </div>
+  <div class="archive-grid">
+    <article class="archive-card archive-featured reveal" data-category="ai">
+      <div class="project-label"><span>01</span><span>ACTIVE</span></div><div class="archive-icon">◉</div><h2>AI Code Reviewer</h2><p>An AI-powered GitHub tool that reviews pull requests and provides useful code-quality feedback.</p><div class="tag-row"><span>Python</span><span>OpenAI API</span><span>GitHub API</span></div><a class="button button-primary" href="https://github.com/harishsarmav/AI_Code_Review" target="_blank" rel="noopener">View repository ↗</a>
+    </article>
+    <article class="archive-card reveal" data-category="web"><div class="project-label"><span>02</span><span>LIVE</span></div><div class="archive-icon">✦</div><h2>Personal Website</h2><p>This site — rebuilt as a creative personal operating system for work, notes, experiments and interests.</p><div class="tag-row"><span>Jekyll</span><span>JavaScript</span><span>CSS</span></div><a class="text-link" href="{{ '/' | relative_url }}">Open site <span>↗</span></a></article>
+    <article class="archive-card reveal" data-category="automation"><div class="project-label"><span>03</span><span>LIVE</span></div><div class="archive-icon">⚡</div><h2>HSV Automation Hub</h2><p>A separate playground for iOS shortcuts, useful automations and small everyday tools.</p><div class="tag-row"><span>iOS Shortcuts</span><span>Automation</span><span>Web</span></div><a class="text-link" href="https://harishsarmav.github.io/hsv/#top" target="_blank" rel="noopener">Visit project <span>↗</span></a></article>
+    <article class="archive-card reveal" data-category="experiments"><div class="project-label"><span>04</span><span>LAB</span></div><div class="archive-icon">⌁</div><h2>Experiments</h2><p>Small prototypes and learning projects — some useful, some weird, all part of the process.</p><div class="tag-row"><span>Learning</span><span>Prototyping</span></div></article>
+  </div>
+</section>

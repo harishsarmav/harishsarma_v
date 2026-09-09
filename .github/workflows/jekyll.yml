@@ -1,70 +1,46 @@
-# Workflow for building and deploying a Jekyll site to GitHub Pages
-name: Beautiful Jekyll CI
+name: Build and deploy Jekyll site
 
 on:
-  # Trigger workflow on pushes to master and pull requests
   push:
-    branches: ["master"]
+    branches: ["master", "main"]
   pull_request:
   workflow_dispatch:
 
-# Set permissions
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
-    name: Build Jekyll Site
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout repository
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 2: Setup Ruby environment
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
+          bundler-cache: true
 
-      # Step 3: Install dependencies
-      - name: Install dependencies
-        run: |
-          bundle install
-          bundle exec appraisal install
-
-      # Step 4: Setup Pages for deployment
       - name: Setup Pages
-        id: configure-pages
+        id: pages
         uses: actions/configure-pages@v5
 
-      # Step 5: Create a CI-specific config file
-      - name: Setup CI config
-        run: |
-          echo "---" > _config_ci.yml
-          echo "baseurl: ${{ steps.configure-pages.outputs.base_path }}" >> _config_ci.yml
-
-      # Step 6: Build the Jekyll site
-      - name: Build site
+      - name: Build Jekyll
+        run: bundle exec jekyll build --future --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-        run: bundle exec appraisal jekyll build --future --config _config_ci.yml,_config.yml
 
-      # Step 7: Upload the built site as an artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
-  # Deployment job
   deploy:
-    name: Deploy to GitHub Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

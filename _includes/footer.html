@@ -1,45 +1,20 @@
-<footer>
-  <div class="container-md beautiful-jekyll-footer">
-    <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        
-        <!-- Contact Message -->
-        <p class="footer-message text-muted text-center">
-          Reach out to me via the links below! Let’s chat, collaborate, or just say hi! 👋😊
-        </p>
-
-        <!-- Social Network Links -->
-        {% include social-networks-links.html %}
-        
-        <!-- Optional Ads Section
-        {% unless site.remove-ads %}
-        <p class="theme-by text-muted text-center">
-          Powered by <a href="https://beautifuljekyll.com" class="footer-link">Beautiful Jekyll</a>
-        </p> -->
-        {% endunless %}
-
-        <!-- Author and Year Details -->
-        <p class="text-muted text-center mt-3">
-          {% if site.author %}
-            {{ site.author }}
-            &nbsp;&bull;&nbsp;
-          {% endif %}
-          {{ site.time | date: '%Y' }}
-
-          {% if site.url-pretty %}
-            &nbsp;&bull;&nbsp;
-            <span class="author-site">
-              <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
-            </span>
-          {% endif %}
-        </p>
-
-         <!-- Back to Top Button -->
-         <div class="back-to-top text-center mt-3">
-          <a href="#" class="footer-link">Back to Top ↑</a>
-         </div>
-        
+<footer class="hs-footer" id="social-network-links">
+  <div class="hs-container">
+    <div class="hs-footer-top">
+      <div>
+        <a class="hs-footer-brand" href="{{ '/' | relative_url }}">Harish Sarma.</a>
+        <p>Software, AI, ideas & a little bit of everything else.</p>
       </div>
+      <div class="hs-socials">
+        <a href="mailto:harishsarma.v@gmail.com">Email</a>
+        <a href="https://github.com/harishsarmav" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/harishsarmav/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/the.harish.way/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="hs-footer-bottom">
+      <span>© {{ site.time | date: '%Y' }} Harish Sarma</span>
+      <a href="{{ '/' | relative_url }}">Back to top ↑</a>
     </div>
   </div>
 </footer>

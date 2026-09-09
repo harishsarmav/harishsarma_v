@@ -9,7 +9,7 @@
 ############################
 
 # Name of website
-title: harishsarma_v
+title: Harish Sarma
 
 # Your name to show in the footer
 author: Harish Sarma
@@ -19,15 +19,12 @@ author: Harish Sarma
 ###############################################
 
 navbar-links:
-  Blog: "/"
-  About Me: "aboutme"
-  Projects: "projects"
+  About: "/aboutme/"
+  Work: "/projects/"
+  Notes: "/"
+  Gallery: "/gallery/"
   Contact: "#social-network-links"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn Markdown: "https://www.markdowntutorial.com/"
-    - My Gallery: "gallery"
-  
+
 future: true
 
 ################
@@ -88,7 +85,7 @@ edit_page_button: true
 navbar-var-length: false
 # The keywords to associate with your website, for SEO purposes
 # Keywords for SEO
-#keywords: "my,list,of,keywords"
+#keywords: "Harish Sarma, software engineer, C++, AI, machine learning, automation"
 
 ##################################
 # --- Colors / Background Image --#
@@ -126,11 +123,11 @@ footer-img: "/assets/img/abstract-geometric.jpg"
 #page-img: "/assets/img/abstract-geometric.jpg"
 
 # Mobile theme color
-mobile-theme-col: "#0085A1"
+mobile-theme-col: "#111827"
 
 # Custom CSS and JS files
-#site-css:
-#  - "/assets/css/custom-style.css"
+site-css:
+  - "/assets/css/site-redesign.css"
 # - "/assets/css/beautifuljekylls.css"
 #site-js:
 #  - "/assets/js/beautifuljekyll.js"

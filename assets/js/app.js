@@ -197,16 +197,25 @@
     lightbox?.setAttribute('aria-hidden', 'true');
     body.style.overflow = '';
   };
-  document.querySelectorAll('[data-lightbox]').forEach(button => {
-    button.addEventListener('click', () => {
-      if (!lightbox || !lightboxImage) return;
-      lightboxImage.src = button.dataset.lightbox;
-      lightboxImage.alt = button.querySelector('img')?.alt || 'Moment';
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-      body.style.overflow = 'hidden';
-    });
+  ddocument.querySelectorAll('[data-lightbox]').forEach(button => {
+  button.addEventListener('click', () => {
+    if (!lightbox || !lightboxImage) return;
+
+    const clickedImage = button.querySelector('img');
+    if (!clickedImage) return;
+
+    lightboxImage.src = new URL(
+      clickedImage.currentSrc || clickedImage.src,
+      document.baseURI
+    ).href;
+
+    lightboxImage.alt = clickedImage.alt || 'Moment';
+
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    body.style.overflow = 'hidden';
   });
+});
   lightbox?.querySelectorAll('[data-lightbox-close]').forEach(el => el.addEventListener('click', closeLightbox));
 
   document.querySelectorAll('.filter-button').forEach(button => {

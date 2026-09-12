@@ -2,7 +2,7 @@
 layout: post
 title: "From Copilot to Coding Agents: The New Era of Software Development"
 subtitle: "AI is moving from writing code to participating in the engineering loop"
-cover-img: "assets/img/Posts/Copilot.png"
+cover-img: "assets/img/Posts/copilot.jpg"
 date: 2026-09-12 11:30:00 IST
 tags: [AI, Software Engineering, Coding Agents, Developer Tools, Future]
 comments: true

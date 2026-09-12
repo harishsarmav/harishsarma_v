@@ -1,5 +1,6 @@
 (() => {
   const html = document.documentElement;
+  html.classList.add('js');
   const body = document.body;
   const nav = document.getElementById('siteNav');
   const themeButton = document.getElementById('themeButton');
@@ -50,15 +51,20 @@
     }, { passive: true });
   }
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  const revealItems = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .12 });
+    revealItems.forEach(el => observer.observe(el));
+  } else {
+    revealItems.forEach(el => el.classList.add('visible'));
+  }
 
   document.querySelectorAll('[data-tilt]').forEach(card => {
     if (!matchMedia('(pointer:fine)').matches) return;

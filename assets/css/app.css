@@ -170,3 +170,10 @@ html[data-theme="light"] .post-content pre{color:#dbe4f0}
   .note-ghost-title{font-size:72px}
   .note-arrow{width:36px;height:36px;flex-basis:36px}
 }
+
+/* Emergency visibility fix */
+html.js .reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}

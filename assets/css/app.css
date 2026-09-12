@@ -101,3 +101,72 @@ html[data-theme=light] .moments-stage{box-shadow:0 30px 70px rgba(37,50,80,.15)}
   .moments-track{transition:none}
   .moment-slide.active .moment-image-button img{transform:none}
 }
+
+/* ---------- Theme + contrast audit ---------- */
+:root{color-scheme:dark light}
+html[data-theme="dark"]{color-scheme:dark}
+html[data-theme="light"]{color-scheme:light}
+
+/* Dark surfaces keep their own readable foregrounds even when the global theme is light. */
+.now-card,.project-feature,.archive-featured,.hero-card,.modal-panel{color:#f6f7fb}
+.now-card h3,.project-feature h3,.archive-featured h2,.hero-card h2,.modal-panel h2{color:#f6f7fb}
+.now-card p,.project-description,.archive-featured p,.hero-card-copy .mono,.modal-lead,.modal-grid p{color:#aeb9cc}
+.now-card .status-pill,.now-card .progress-row{color:#a9b5c8}
+.now-card .progress-row>div{background:rgba(255,255,255,.12)}
+.project-feature .project-label{color:#8f9cb1}
+.hero-card-top,.hero-card-bottom{color:#a0acc0}
+.hero-card-copy .mono{color:#91a0b8}
+.hero-tags span,.hero-card .tag-row span{color:#c2ccda}
+.archive-featured .project-label,.archive-featured .note-date{color:#aeb9cc}
+.modal-panel .eyebrow{color:#aeb9cc}
+.modal-close{color:#fff}
+
+/* Interactive controls always expose their state clearly. */
+.button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:13px;padding:13px 17px;font-size:13px;font-weight:600;cursor:pointer;transition:transform .22s,background .22s,border-color .22s}
+.button-secondary:hover{transform:translateY(-3px);background:var(--surface2);border-color:rgba(139,92,246,.35)}
+.icon-button:focus-visible,.menu-button:focus-visible,.button:focus-visible,.button-secondary:focus-visible,.filter-button:focus-visible,.slider-arrow:focus-visible,.slider-dot:focus-visible,.moment-image-button:focus-visible,.note-row:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+
+/* Image-backed notes: editorial, readable, and still lightweight. */
+.notes-stack,.notes-archive{border-top:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.note-row,.note-row-large{position:relative;isolation:isolate;display:flex;min-height:190px;align-items:flex-end;gap:18px;padding:28px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--surface);color:#fff;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.note-row-featured{grid-column:1 / -1;min-height:290px}
+.note-row:hover{padding-left:28px;transform:translateY(-5px);border-color:rgba(139,92,246,.42);box-shadow:0 25px 70px rgba(0,0,0,.2)}
+.note-bg{position:absolute;inset:-3px;background-position:center;background-size:cover;background-repeat:no-repeat;transform:scale(1.03);transition:transform .7s ease,filter .4s ease;z-index:-3;filter:saturate(.82) contrast(.95)}
+.note-row:hover .note-bg{transform:scale(1.08)}
+.note-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(4,8,18,.3),rgba(4,8,18,.68) 48%,rgba(4,8,18,.94));z-index:-2}
+.note-ghost-title{position:absolute;right:-3%;bottom:-8%;font-size:clamp(70px,10vw,170px);font-weight:800;line-height:.8;letter-spacing:-.07em;white-space:nowrap;color:rgba(255,255,255,.055);pointer-events:none;z-index:-1;max-width:120%;overflow:hidden}
+.note-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;max-width:900px}
+.note-date{display:block;font-size:10px;color:rgba(255,255,255,.7);margin-bottom:9px}
+.note-title,.note-row-large .note-title{display:block;font-size:clamp(23px,3vw,38px);font-weight:700;line-height:1.05;letter-spacing:-.04em;color:#fff}
+.note-row-featured .note-title{font-size:clamp(30px,4.5vw,58px)}
+.note-subtitle{display:block;margin-top:11px;max-width:720px;font-size:13px;line-height:1.5;color:rgba(255,255,255,.75)}
+.note-arrow{position:relative;z-index:2;margin-left:auto;align-self:flex-end;width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(4,8,18,.35);color:#fff;backdrop-filter:blur(10px);transition:transform .25s,background .25s}
+.note-row:hover .note-arrow{transform:translate(3px,-3px);background:rgba(139,92,246,.4)}
+
+/* Explicit light-mode treatment for image cards and dark-only components. */
+html[data-theme="light"] .note-row{border-color:rgba(255,255,255,.18)}
+html[data-theme="light"] .note-overlay{background:linear-gradient(135deg,rgba(4,8,18,.22),rgba(4,8,18,.62) 48%,rgba(4,8,18,.9))}
+html[data-theme="light"] .site-nav{background:linear-gradient(to bottom,rgba(247,248,252,.92),rgba(247,248,252,0))}
+html[data-theme="light"] .site-nav.scrolled{background:color-mix(in srgb,var(--bg) 88%,transparent)}
+html[data-theme="light"] .mini-gallery span{color:#fff}
+html[data-theme="light"] .post-content pre{color:#dbe4f0}
+
+/* Text that sits on intentionally dark imagery/gradients. */
+.contact-cta,.contact-cta h2,.contact-cta .eyebrow,.contact-cta>p:not(.eyebrow),.mini-gallery span,.gallery-item figcaption{color:#fff}
+
+@media(max-width:900px){
+  .notes-stack,.notes-archive{grid-template-columns:1fr}
+  .note-row-featured{grid-column:auto}
+  .note-row,.note-row-large{min-height:210px}
+}
+@media(max-width:600px){
+  .notes-stack,.notes-archive{gap:12px}
+  .note-row,.note-row-large{min-height:205px;padding:22px;border-radius:20px}
+  .note-row:hover{padding-left:22px}
+  .note-row-featured{min-height:245px}
+  .note-title,.note-row-large .note-title{font-size:22px}
+  .note-row-featured .note-title{font-size:29px}
+  .note-subtitle{font-size:12px}
+  .note-ghost-title{font-size:72px}
+  .note-arrow{width:36px;height:36px;flex-basis:36px}
+}

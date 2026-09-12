@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070b14">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f8fc" media="(prefers-color-scheme: light)">
   <meta name="description" content="{{ page.description | default: site.description }}">
   <title>{{ page.title | default: site.title }} · {{ site.title }}</title>
   <link rel="icon" href="{{ '/assets/img/HS.png' | relative_url }}">
